@@ -126,6 +126,10 @@ align-items: center;
 
 .btn-primary,
 .btn-secondary {
+height: 44px;
+padding: 0 22px;
+border-radius: 8px;
+font-weight: 600;  
 width: 100%;
 max-width: 260px;
 padding: 12px;
@@ -136,8 +140,13 @@ text-decoration: none;
 
 .btn-primary {
 background: var(--accent);
+box-shadow: 0 8px 25px rgba(0,255,255,0.2);  
 color: black;
 font-weight: 600;
+}
+
+.btn-primary:hover {
+  transform: translateY(-2px);
 }
 
 .btn-secondary {
@@ -295,11 +304,4 @@ margin-right: 10px;
   min-width: 180px;
 }
 
-/* GLOBAL BUTTON CONSISTENCY */
-.btn-primary,
-.btn-secondary {
-  height: 44px;
-  padding: 0 22px;
-  border-radius: 8px;
-  font-weight: 600;
-}
+
