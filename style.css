@@ -16,6 +16,14 @@ body {
   filter: drop-shadow(0 0 8px rgba(0,255,255,0.3));
 }
 
+.logo img {
+  transition: transform 0.3s ease;
+}
+
+.logo img:hover {
+  transform: scale(1.05);
+}
+
 .hero h1 {
   background: linear-gradient(to right, cyan, white);
   -webkit-background-clip: text;
