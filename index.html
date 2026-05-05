@@ -22,6 +22,40 @@
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
 
+  <!-- ✅ QUICK FIX CSS (for profile image only) -->
+
+  <style>
+    .profile-image {
+      width: 100%;
+      max-width: 320px;
+      height: 260px;
+      margin: 20px auto;
+      border-radius: 14px;
+      overflow: hidden;
+    }
+
+    .profile-image img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center 20%;
+    }
+
+    @media (min-width: 768px) {
+      .bio-flex {
+        display: flex;
+        align-items: center;
+        gap: 50px;
+        text-align: left;
+      }
+
+      .profile-image {
+        height: 400px;
+        max-width: 350px;
+      }
+    }
+  </style>
+
 </head>
 
 <body>
@@ -32,11 +66,11 @@
   <div class="logo">
     <img src="logo.png" alt="Sanjay Benjamin Logo">
   </div>
-<div class="nav-links">
-  <a href="#systems">Systems</a>
-  <a href="#bio">Bio</a>
-  <a href="/ai-blueprint.html">Blueprint</a>
-</div>
+  <div class="nav-links">
+    <a href="#systems">Systems</a>
+    <a href="#bio">Bio</a>
+    <a href="/ai-blueprint.html">Blueprint</a>
+  </div>
 </nav>
 
 <!-- HERO -->
@@ -49,6 +83,7 @@
       <h1>Turn AI Into Revenue.</h1>
       <p>No fluff. Just systems that generate leads and sales.</p>
 
+```
   <p class="hero-proof">
     Built AI systems for content, funnels, and automation.
   </p>
@@ -66,39 +101,47 @@
     </a>
   </div>
 </div>
+```
 
   </div>
 </section>
 
-  <section class="bio" id="bio">
-  <div class="container">
+<!-- ✅ FIXED BIO SECTION -->
 
-    <!-- ✅ ADD IMAGE HERE -->
-   <div class="profile-image">
+<section class="bio" id="bio">
+  <div class="container bio-flex">
+
+```
+<!-- IMAGE -->
+<div class="profile-image">
   <img src="sb.jpeg" alt="Sanjay Benjamin Profile">
 </div>
 
-    <h2>Who I Am</h2>
+<!-- TEXT -->
+<div>
+  <h2>Who I Am</h2>
 
-    <p class="bio-text">
-      AI expert with a Doctorate in Business Administration and an MBA. With 35+ Years Industry Experience.
-    </p>
-    
-    <p class="bio-text">
-      I design AI systems that turn content into leads, and leads into revenue.
-    </p>
+  <p class="bio-text">
+    AI expert with a Doctorate in Business Administration and an MBA. With 35+ Years Industry Experience.
+  </p>
 
-    <p class="bio-text">
-      Instead of using AI for random tasks, I focus on building structured systems — content engines, automated funnels, and scalable digital platforms.
-    </p>
+  <p class="bio-text">
+    I design AI systems that turn content into leads, and leads into revenue.
+  </p>
 
-    <p class="bio-highlight">
-      My goal is simple: turn AI into a predictable growth machine.
-    </p>
+  <p class="bio-text">
+    Instead of using AI for random tasks, I focus on building structured systems — content engines, automated funnels, and scalable digital platforms.
+  </p>
+
+  <p class="bio-highlight">
+    My goal is simple: turn AI into a predictable growth machine.
+  </p>
+</div>
+```
 
   </div>
 </section>
-  
+
 <!-- AUTHORITY -->
 
 <section class="authority">
@@ -116,12 +159,13 @@
     <h2>I don’t build websites.</h2>
     <h3>I build revenue systems.</h3>
 
+```
 <div class="grid">
   <div>AI Content Engines</div>
   <div>Automated Funnels</div>
   <div>SaaS Learning Platforms</div>
 </div>
-
+```
 
   </div>
 </section>
@@ -132,7 +176,7 @@
   <div class="container">
     <h2>Most businesses use AI wrong.</h2>
 
-
+```
 <p>
   They create content.<br>
   They automate tasks.<br>
@@ -140,7 +184,7 @@
 </p>
 
 <h3>I build systems that do.</h3>
-
+```
 
   </div>
 </section>
@@ -150,7 +194,7 @@
 <section class="systems" id="systems">
   <div class="container">
 
-
+```
 <h2>What I Build</h2>
 
 <p class="systems-sub">
@@ -162,7 +206,6 @@
 </p>
 
 <div class="cards">
-
   <div class="card">
     <h3>AI Content Engines</h3>
     <p>Automated systems that generate content, leads, and attention daily.</p>
@@ -177,7 +220,6 @@
     <h3>Dubs AI Studio</h3>
     <p>AI-powered platform to create, automate, and scale digital content.</p>
   </div>
-
 </div>
 
 <div class="systems-footer">
@@ -186,15 +228,17 @@
     Get Free AI Blueprint
   </a>
 </div>
+```
 
   </div>
 </section>
 
-<!-- LEAD CAPTURE -->
+<!-- LEAD -->
 
 <section class="lead">
   <div class="container">
 
+```
 <h2>Get the AI Revenue Blueprint</h2>
 
 <p>
@@ -213,6 +257,7 @@
   <input type="email" name="email" placeholder="Enter your email" required />
   <button type="submit">Get Free Access</button>
 </form>
+```
 
   </div>
 </section>
