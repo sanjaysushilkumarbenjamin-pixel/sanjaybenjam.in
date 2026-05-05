@@ -6,9 +6,15 @@
 }
 
 body {
-  background: #020617;
+   background: radial-gradient(circle at center, #020617, #000);
   color: white;
 }
+
+.hero h1 {
+  background: linear-gradient(to right, cyan, white);
+  -webkit-background-clip: text;
+  color: transparent;
+} 
 
 /* NAV */
 .nav {
@@ -110,4 +116,41 @@ p {
 .cta-final {
   text-align: center;
   padding: 100px 20px;
+}
+
+.authority {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  padding: 40px 20px;
+  background: #020617;
+  border-top: 1px solid rgba(255,255,255,0.05);
+  border-bottom: 1px solid rgba(255,255,255,0.05);
+}
+
+.authority div {
+  font-size: 1rem;
+  color: #94a3b8;
+}
+
+.story {
+  text-align: center;
+  padding: 100px 20px;
+  max-width: 800px;
+  margin: auto;
+}
+
+.story h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.story p {
+  color: #cbd5f5;
+  line-height: 1.6;
+}
+
+.story h3 {
+  margin-top: 30px;
+  color: cyan;
 }
