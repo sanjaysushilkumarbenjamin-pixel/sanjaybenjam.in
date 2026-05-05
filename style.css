@@ -58,7 +58,8 @@ canvas {
 }
 
 h1 {
-  font-size: 4.5rem;
+  font-size: 5rem;
+  font-weight: 700;
   text-shadow: 0 0 20px cyan;
 }
 
@@ -235,5 +236,11 @@ section {
 .hero-proof {
   color: cyan;
   margin-top: 10px;
+  font-size: 0.9rem;
+}
+
+.urgency {
+  color: #f87171; /* subtle red */
+  margin: 10px 0 20px;
   font-size: 0.9rem;
 }
