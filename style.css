@@ -238,31 +238,32 @@ gap: var(--space-2);
 LEAD FORM
 =============================== */
 .lead form {
-margin-top: var(--space-3);
-display: flex;
-flex-direction: column;
-align-items: center;
-gap: var(--space-2);
+  margin-top: 32px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
 }
 
+/* INPUT */
 .lead input {
-width: 100%;
-max-width: 280px;
-padding: 12px;
-border-radius: 6px;
-border: none;
+  width: 320px;
+  height: 48px;
+  padding: 0 14px;
+  border-radius: 8px;
+  border: none;
 }
 
+/* BUTTON */
 .lead button {
-width: 100%;
-max-width: 280px;
-padding: 12px;
-border-radius: 6px;
-border: none;
-background: var(--accent);
-font-weight: bold;
+  height: 48px;
+  padding: 0 24px;
+  border-radius: 8px;
+  border: none;
+  background: var(--accent);
+  font-weight: 600;
+  min-width: 180px;
 }
-
 .urgency {
 color: #f87171;
 margin: var(--space-2) 0;
@@ -300,4 +301,10 @@ flex-direction: row;
 .lead input {
 margin-right: var(--space-2);
 }
+.lead {
+  text-align: center;
+}
+
+.lead .btn-primary {
+  margin-top: 20px;
 }
