@@ -111,3 +111,108 @@ justify-content: center;
 flex-direction: row;
 }
 }
+/* ===============================
+STABILITY PATCH (DO NOT REMOVE)
+=============================== */
+
+/* universal image fix */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* consistent section spacing */
+section {
+  padding: 80px 20px;
+}
+
+/* center all content blocks */
+.hero-content,
+.bio-container,
+.cards,
+.lead {
+  max-width: 1100px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* FIX CARDS */
+.cards {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.card {
+  width: 100%;
+  max-width: 320px;
+}
+
+/* FIX BIO */
+.bio-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+}
+
+.bio-image {
+  width: 100%;
+  max-width: 300px;
+  height: 260px;
+  overflow: hidden;
+  border-radius: 12px;
+}
+
+.bio-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.bio-content {
+  max-width: 500px;
+  text-align: center;
+}
+
+/* FIX FORM */
+.lead form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.lead input,
+.lead button {
+  width: 100%;
+  max-width: 280px;
+}
+
+/* DESKTOP FIX */
+@media (min-width: 768px) {
+
+  .cards {
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .bio-container {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+  }
+
+  .bio-content {
+    text-align: left;
+  }
+
+  .lead form {
+    flex-direction: row;
+    justify-content: center;
+  }
+
+}
