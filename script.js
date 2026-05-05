@@ -226,3 +226,10 @@ gsap.to(".hero-content", {
   duration: 2,
   ease: "power1.inOut"
 });
+
+const glow = document.querySelector(".cursor-glow");
+
+window.addEventListener("mousemove", (e) => {
+  glow.style.left = e.clientX + "px";
+  glow.style.top = e.clientY + "px";
+});
