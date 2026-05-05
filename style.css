@@ -435,3 +435,46 @@ section .btn-primary {
 .hero .btn-primary {
   opacity: 1;
 }
+/* ===== BIO FIX (FOR BROKEN LAYOUT) ===== */
+
+.bio-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+}
+
+/* FORCE IMAGE CONSTRAINT */
+.bio-image {
+  width: 100%;
+  max-width: 320px;
+  height: 300px;
+  overflow: hidden;
+  border-radius: 16px;
+}
+
+.bio-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* DESKTOP FIX */
+@media (min-width: 768px) {
+  .bio-container {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 80px;
+  }
+
+  .bio-image {
+    max-width: 350px;
+    height: 420px;
+  }
+
+  .bio-content {
+    max-width: 500px;
+  }
+}
