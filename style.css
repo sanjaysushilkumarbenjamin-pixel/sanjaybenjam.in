@@ -346,3 +346,9 @@ margin-right: var(--space-2);
   font-weight: 600;
   color: var(--accent);
 }
+
+.bio-img {
+  width: 120px;
+  border-radius: 50%;
+  margin-bottom: 20px;
+}
