@@ -362,6 +362,7 @@ margin-right: var(--space-2);
   max-height: 420px;
   overflow: hidden;
   border-radius: 12px;
+  box-shadow: 0 20px 60px rgba(0,255,255,0.08);
 }
 
 .profile-image img {
@@ -376,6 +377,7 @@ margin-right: var(--space-2);
   .profile-image {
     max-height: 300px;
     border-radius: 10px;
+    box-shadow: 0 20px 60px rgba(0,255,255,0.08);
   }
 
   .profile-image img {
