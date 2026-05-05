@@ -1,0 +1,297 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+   font-family: 'Inter', sans-serif;
+   background: radial-gradient(circle at center, #020617, #000);
+  color: white;
+}
+
+.logo img {
+  height: 76px;
+  object-fit: contain;
+  filter: drop-shadow(0 0 8px rgba(0,255,255,0.3));
+}
+
+.logo img {
+  transition: transform 0.3s ease;
+}
+
+.logo img:hover {
+  transform: scale(1.05);
+}
+
+.hero h1 {
+  background: linear-gradient(to right, cyan, white);
+  -webkit-background-clip: text;
+  color: transparent;
+} 
+
+/* NAV */
+.nav {
+  position: fixed;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 40px;
+  z-index: 10;
+}
+
+.nav a {
+  color: white;
+  margin-left: 20px;
+  text-decoration: none;
+}
+
+/* HERO */
+.hero {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+canvas {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.hero-content {
+  text-align: center;
+  position: relative;
+  z-index: 3;
+}
+
+h1 {
+  font-size: 5rem;
+  font-weight: 700;
+  text-shadow: 0 0 20px cyan;
+}
+
+h2 {
+  font-size: 2.5rem;
+  font-weight: 600;
+}
+
+h3 {
+  font-size: 1.4rem;
+}
+
+p {
+  font-size: 1rem;
+  margin: 20px 0;
+  color: #cbd5f5;
+}
+
+.btn-primary {
+  background: linear-gradient(135deg, cyan, #00ffff);
+  color: black;
+  padding: 14px 30px;
+  font-weight: bold;
+  border-radius: 8px;
+  box-shadow: 0 10px 30px rgba(0,255,255,0.3);
+  transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+  transform: scale(1.05);
+  box-shadow: 0 15px 40px rgba(0,255,255,0.6);
+}
+
+.btn-secondary {
+  border: 1px solid cyan;
+  padding: 12px 20px;
+  color: cyan;
+  text-decoration: none;
+}
+
+/* VALUE */
+.value {
+  padding: 100px 40px;
+  text-align: center;
+}
+
+.grid {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 40px;
+}
+
+/* SYSTEMS */
+.systems {
+  padding: 100px 40px;
+  text-align: center;
+}
+
+.systems h2 {
+  margin-bottom: 40px;
+}
+
+.cards {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.card {
+  background: #0f172a;
+  padding: 30px;
+  border-radius: 12px;
+  width: 280px;
+  transition: all 0.4s ease;
+}
+
+.card h3 {
+  margin-bottom: 10px;
+}
+
+.card p {
+  color: #94a3b8;
+}
+
+/* 🔥 PREMIUM HOVER */
+.card:hover {
+  transform: translateY(-10px) scale(1.02);
+  box-shadow: 0 20px 40px rgba(0,255,255,0.2);
+}
+/* CTA */
+.cta-final {
+  text-align: center;
+  padding: 100px 20px;
+}
+
+.authority {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  padding: 40px 20px;
+  background: #020617;
+  border-top: 1px solid rgba(255,255,255,0.05);
+  border-bottom: 1px solid rgba(255,255,255,0.05);
+}
+
+.authority div {
+  font-size: 1rem;
+  color: #94a3b8;
+}
+
+.story {
+  text-align: center;
+  padding: 100px 20px;
+  max-width: 800px;
+  margin: auto;
+}
+
+.story h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.story p {
+  color: #cbd5f5;
+  line-height: 1.6;
+}
+
+.story h3 {
+  margin-top: 30px;
+  color: cyan;
+}
+
+.systems-sub {
+  color: #cbd5f5;
+  margin-bottom: 40px;
+}
+
+canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+}
+
+@media (max-width: 768px) {
+
+  h1 {
+    font-size: 2.5rem;
+  }
+
+@media (max-width: 768px) {
+  .logo img {
+    height: 30px;
+  }
+}
+
+  .cards {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .authority {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+}
+
+section {
+  padding: 100px 20px;
+}
+
+.hero-proof {
+  color: cyan;
+  margin-top: 10px;
+  font-size: 0.9rem;
+}
+
+.urgency {
+  color: #f87171; /* subtle red */
+  margin: 10px 0 20px;
+  font-size: 0.9rem;
+}
+.lead {
+  text-align: center;
+}
+
+.lead form {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.lead input {
+  text-align: center;
+}
+
+.lead .btn-primary {
+  display: inline-block;
+  margin: 15px auto;
+}
+
+.cursor-glow {
+  position: fixed;
+  width: 300px;
+  height: 300px;
+  background: radial-gradient(circle, rgba(0,255,255,0.2), transparent);
+  pointer-events: none;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  filter: blur(80px);
+}
