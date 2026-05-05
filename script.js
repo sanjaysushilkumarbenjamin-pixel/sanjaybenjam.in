@@ -168,3 +168,6 @@ gsap.from(".lead", {
     start: "top 85%"
   }
 });
+
+const isMobile = window.innerWidth < 768;
+const particlesCount = isMobile ? 400 : 700;
