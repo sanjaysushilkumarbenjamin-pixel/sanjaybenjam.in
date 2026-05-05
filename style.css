@@ -231,3 +231,9 @@ canvas {
 section {
   padding: 100px 20px;
 }
+
+.hero-proof {
+  color: cyan;
+  margin-top: 10px;
+  font-size: 0.9rem;
+}
