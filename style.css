@@ -305,25 +305,38 @@ color: var(--accent);
 FORM (FIXED MOBILE)
 =============================== */
 .lead form {
-margin-top: var(--space-3);
-display: flex;
-flex-direction: column;
-gap: 10px;
-align-items: center;
+  margin-top: 20px;
+
+  display: flex;
+  justify-content: center;   /* center horizontally */
+  align-items: center;
+
+  gap: 12px;
+
+  max-width: 600px;          /* keeps it tight */
+  margin-left: auto;
+  margin-right: auto;
+
+  background: rgba(255,255,255,0.03);
+  padding: 12px;
+  border-radius: 12px;
 }
 
-.lead input,
-.lead button {
-width: 100%;
-max-width: 280px;
-height: 46px;
-border-radius: 8px;
-border: none;
+.lead input {
+  flex: 1;
+  min-width: 200px;
+  padding: 12px;
+  border-radius: 8px;
+  border: none;
 }
 
 .lead button {
-background: var(--accent);
-font-weight: 600;
+  padding: 12px 20px;
+  border-radius: 8px;
+  border: none;
+  background: #00ffff;
+  font-weight: 600;
+  white-space: nowrap;
 }
 
 .urgency {
