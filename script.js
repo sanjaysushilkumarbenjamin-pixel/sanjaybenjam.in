@@ -20,7 +20,7 @@ renderer.setSize(window.innerWidth, window.innerHeight);
 renderer.setPixelRatio(window.devicePixelRatio);
 
 // PARTICLES
-const particlesCount = 800;
+const particlesCount = 500;
 const positions = [];
 const geometry = new THREE.BufferGeometry();
 
