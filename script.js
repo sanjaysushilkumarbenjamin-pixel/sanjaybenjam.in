@@ -63,3 +63,34 @@ document.addEventListener("mousemove", e => {
   document.body.style.backgroundPosition = `${e.clientX}px ${e.clientY}px`;
 });
 
+gsap.from(".card", {
+  scrollTrigger: {
+    trigger: ".cards",
+    start: "top 80%"
+  },
+  opacity: 0,
+  y: 100,
+  stagger: 0.2
+});
+
+gsap.from(".authority div", {
+  opacity: 0,
+  y: 30,
+  stagger: 0.2,
+  duration: 1,
+  scrollTrigger: {
+    trigger: ".authority",
+    start: "top 80%"
+  }
+});
+
+gsap.from(".story h2, .story p, .story h3", {
+  opacity: 0,
+  y: 40,
+  stagger: 0.3,
+  duration: 1,
+  scrollTrigger: {
+    trigger: ".story",
+    start: "top 80%"
+  }
+});
