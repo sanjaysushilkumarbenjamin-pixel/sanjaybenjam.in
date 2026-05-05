@@ -294,3 +294,12 @@ margin-right: 10px;
   justify-content: center;
   min-width: 180px;
 }
+
+/* GLOBAL BUTTON CONSISTENCY */
+.btn-primary,
+.btn-secondary {
+  height: 44px;
+  padding: 0 22px;
+  border-radius: 8px;
+  font-weight: 600;
+}
