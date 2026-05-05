@@ -297,3 +297,11 @@ section {
   z-index: 2;
   filter: blur(80px);
 }
+
+.hero::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(2,6,23,0.4);
+  z-index: 2;
+}
