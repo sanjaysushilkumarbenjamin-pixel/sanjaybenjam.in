@@ -1,219 +1,170 @@
-// INTERACTIVE THREE.JS PARTICLES
+// ===============================
+// INIT GSAP
+// ===============================
+gsap.registerPlugin(ScrollTrigger);
 
+// ===============================
+// CURSOR GLOW
+// ===============================
+const glow = document.querySelector(".cursor-glow");
+
+window.addEventListener("mousemove", (e) => {
+  if (glow) {
+    glow.style.left = e.clientX + "px";
+    glow.style.top = e.clientY + "px";
+  }
+});
+
+// ===============================
+// THREE.JS PARTICLES (STABLE VERSION)
+// ===============================
 const canvas = document.getElementById("bg");
 
-const scene = new THREE.Scene();
+if (canvas) {
 
-const camera = new THREE.PerspectiveCamera(
-  75,
-  window.innerWidth / window.innerHeight,
-  0.1,
-  1000
-);
+  const scene = new THREE.Scene();
 
-const renderer = new THREE.WebGLRenderer({
-  canvas: canvas,
-  alpha: true
-});
+  const camera = new THREE.PerspectiveCamera(
+    75,
+    window.innerWidth / window.innerHeight,
+    0.1,
+    1000
+  );
 
-renderer.setSize(window.innerWidth, window.innerHeight);
-renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
-
-// PARTICLES
-const particlesGeometry = new THREE.BufferGeometry();
-const particlesCount = 700;
-
-const positions = new Float32Array(particlesCount * 3);
-const originalPositions = new Float32Array(particlesCount * 3);
-
-for (let i = 0; i < particlesCount * 3; i++) {
-  const val = (Math.random() - 0.5) * 10;
-  positions[i] = val;
-  originalPositions[i] = val;
-}
-
-particlesGeometry.setAttribute(
-  "position",
-  new THREE.BufferAttribute(positions, 3)
-);
-
-// MATERIAL
-const particlesMaterial = new THREE.PointsMaterial({
-  size: 0.02,
-  color: 0x00ffff,
-  transparent: true,
-  opacity: 0.8
-});
-
-// MESH
-const particlesMesh = new THREE.Points(
-  particlesGeometry,
-  particlesMaterial
-);
-
-scene.add(particlesMesh);
-
-camera.position.z = 5;
-
-// 🖱️ MOUSE TRACKING
-let mouse = { x: 0, y: 0 };
-
-window.addEventListener("mousemove", (event) => {
-  mouse.x = (event.clientX / window.innerWidth - 0.5) * 2;
-  mouse.y = (event.clientY / window.innerHeight - 0.5) * 2;
-});
-
-// ANIMATION
-function animate() {
-  requestAnimationFrame(animate);
-
-  // subtle rotation
-  particlesMesh.rotation.y += 0.0005;
-  particlesMesh.rotation.x += 0.0002;
-
-  // PARALLAX CAMERA
-camera.position.x += (mouse.x * 2 - camera.position.x) * 0.08;
-camera.position.y += (-mouse.y * 2 - camera.position.y) * 0.08;
-
-  // PARTICLE WAVE MOTION
-  const pos = particlesGeometry.attributes.position.array;
-
-  for (let i = 0; i < pos.length; i += 3) {
-    const x = originalPositions[i];
-    const y = originalPositions[i + 1];
-
-    pos[i + 2] =
-      originalPositions[i + 2] +
-      Math.sin(Date.now() * 0.001 + x + y) * 0.05;
-  }
-
-  particlesGeometry.attributes.position.needsUpdate = true;
-
-  renderer.render(scene, camera);
-}
-
-animate();
-
-// RESPONSIVE
-window.addEventListener("resize", () => {
-  renderer.setSize(window.innerWidth, window.innerHeight);
-  camera.aspect = window.innerWidth / window.innerHeight;
-  camera.updateProjectionMatrix();
-});
-
-
-
-const scene = new THREE.Scene();
-const camera = new THREE.PerspectiveCamera(75, window.innerWidth/window.innerHeight, 0.1, 1000);
-
-const renderer = new THREE.WebGLRenderer({ canvas: document.getElementById("bg") });
-renderer.setSize(window.innerWidth, window.innerHeight);
-
-const geometry = new THREE.SphereGeometry(2, 32, 32);
-const material = new THREE.MeshBasicMaterial({ wireframe: true, color: 0x00ffff });
-
-const sphere = new THREE.Mesh(geometry, material);
-scene.add(sphere);
-
-camera.position.z = 5;
-
-function animate() {
-  requestAnimationFrame(animate);
-  sphere.rotation.x += 0.002;
-  sphere.rotation.y += 0.003;
-  renderer.render(scene, camera);
-}
-
-animate();
-
-function animate() {
-  ctx.clearRect(0, 0, canvas.width, canvas.height);
-
-  particles.forEach(p => {
-    p.x += p.speedX;
-    p.y += p.speedY;
-
-    ctx.fillStyle = "cyan";
-    ctx.fillRect(p.x, p.y, p.size, p.size);
+  const renderer = new THREE.WebGLRenderer({
+    canvas: canvas,
+    alpha: true
   });
 
-  requestAnimationFrame(animate);
+  renderer.setSize(window.innerWidth, window.innerHeight);
+  renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
+  renderer.setClearColor(0x000000, 0);
+
+  // PARTICLES
+  const particlesCount = 700;
+  const positions = new Float32Array(particlesCount * 3);
+
+  for (let i = 0; i < particlesCount * 3; i++) {
+    positions[i] = (Math.random() - 0.5) * 10;
+  }
+
+  const geometry = new THREE.BufferGeometry();
+  geometry.setAttribute(
+    "position",
+    new THREE.BufferAttribute(positions, 3)
+  );
+
+  const material = new THREE.PointsMaterial({
+    size: 0.025,
+    color: 0x00ffff,
+    transparent: true,
+    opacity: 0.7
+  });
+
+  const particles = new THREE.Points(geometry, material);
+  scene.add(particles);
+
+  camera.position.z = 5;
+
+  // MOUSE
+  let mouse = { x: 0, y: 0 };
+
+  window.addEventListener("mousemove", (e) => {
+    mouse.x = (e.clientX / window.innerWidth - 0.5) * 2;
+    mouse.y = (e.clientY / window.innerHeight - 0.5) * 2;
+  });
+
+  // ANIMATION LOOP
+  function animate() {
+    requestAnimationFrame(animate);
+
+    particles.rotation.y += 0.0005;
+    particles.rotation.x += 0.0002;
+
+    // PARALLAX
+    camera.position.x += (mouse.x * 1.2 - camera.position.x) * 0.05;
+    camera.position.y += (-mouse.y * 1.2 - camera.position.y) * 0.05;
+
+    renderer.render(scene, camera);
+  }
+
+  animate();
+
+  // RESIZE FIX
+  window.addEventListener("resize", () => {
+    renderer.setSize(window.innerWidth, window.innerHeight);
+    camera.aspect = window.innerWidth / window.innerHeight;
+    camera.updateProjectionMatrix();
+  });
 }
 
-animate();
-
-gsap.registerPlugin(ScrollTrigger);
-ScrollTrigger.refresh();
-
-// HERO TEXT REVEAL
+// ===============================
+// HERO CINEMATIC ANIMATION
+// ===============================
 gsap.from(".hero-content h1", {
   opacity: 0,
-  y: 50,
-  duration: 1.5
+  y: 80,
+  duration: 1.2,
+  ease: "power3.out"
 });
 
-// SECTIONS FADE IN
-gsap.utils.toArray("section").forEach(section => {
+gsap.from(".hero-content p", {
+  opacity: 0,
+  y: 40,
+  delay: 0.3,
+  stagger: 0.2,
+  duration: 1
+});
+
+// ===============================
+// HERO SCROLL PARALLAX
+// ===============================
+gsap.to(".hero-content", {
+  y: -100,
+  scrollTrigger: {
+    trigger: ".hero",
+    start: "top top",
+    end: "bottom top",
+    scrub: true
+  }
+});
+
+// ===============================
+// SECTION REVEALS
+// ===============================
+gsap.utils.toArray("section").forEach((section) => {
   gsap.from(section, {
     opacity: 0,
-    y: 80,
+    y: 60,
     duration: 1,
     scrollTrigger: {
       trigger: section,
-      start: "top 80%"
+      start: "top 85%"
     }
   });
 });
 
-
-document.addEventListener("mousemove", e => {
-  document.body.style.backgroundPosition = `${e.clientX}px ${e.clientY}px`;
-});
-
+// ===============================
+// CARDS ANIMATION
+// ===============================
 gsap.from(".card", {
   opacity: 0,
-  y: 80,
+  y: 100,
   stagger: 0.2,
-  duration: 1,
   scrollTrigger: {
     trigger: ".cards",
-    start: "top 80%"
+    start: "top 85%"
   }
 });
 
-gsap.from(".authority div", {
+// ===============================
+// CTA ANIMATION
+// ===============================
+gsap.from(".lead", {
   opacity: 0,
-  y: 30,
-  stagger: 0.2,
-  duration: 1,
+  scale: 0.95,
   scrollTrigger: {
-    trigger: ".authority",
-    start: "top 80%"
+    trigger: ".lead",
+    start: "top 85%"
   }
-});
-
-gsap.from(".story h2, .story p, .story h3", {
-  opacity: 0,
-  y: 40,
-  stagger: 0.3,
-  duration: 1,
-  scrollTrigger: {
-    trigger: ".story",
-    start: "top 80%"
-  }
-});
-
-gsap.to(".hero-content", {
-  y: 10,
-  repeat: -1,
-  yoyo: true,
-  duration: 2,
-  ease: "power1.inOut"
-});
-
-const glow = document.querySelector(".cursor-glow");
-
-window.addEventListener("mousemove", (e) => {
-  glow.style.left = e.clientX + "px";
-  glow.style.top = e.clientY + "px";
 });
