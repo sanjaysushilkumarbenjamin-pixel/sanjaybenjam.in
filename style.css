@@ -370,3 +370,16 @@ margin-right: var(--space-2);
   object-fit: cover;
   object-position: center top;
 }
+
+@media (max-width: 768px) {
+
+  .profile-image {
+    max-height: 300px;
+    border-radius: 10px;
+  }
+
+  .profile-image img {
+    object-position: center 20%;
+  }
+
+}
