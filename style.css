@@ -62,18 +62,34 @@ h1 {
   text-shadow: 0 0 20px cyan;
 }
 
+h2 {
+  font-size: 2.5rem;
+  font-weight: 600;
+}
+
+h3 {
+  font-size: 1.4rem;
+}
+
 p {
+  font-size: 1rem;
   margin: 20px 0;
   color: #cbd5f5;
 }
 
 .btn-primary {
-  background: cyan;
+  background: linear-gradient(135deg, cyan, #00ffff);
   color: black;
-  padding: 14px 28px;
+  padding: 14px 30px;
   font-weight: bold;
-  border-radius: 6px;
-  box-shadow: 0 0 20px rgba(0,255,255,0.4);
+  border-radius: 8px;
+  box-shadow: 0 10px 30px rgba(0,255,255,0.3);
+  transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+  transform: scale(1.05);
+  box-shadow: 0 15px 40px rgba(0,255,255,0.6);
 }
 
 .btn-secondary {
@@ -210,4 +226,8 @@ canvas {
     gap: 10px;
   }
 
+}
+
+section {
+  padding: 100px 20px;
 }
