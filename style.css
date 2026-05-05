@@ -381,4 +381,15 @@ border-radius: 12px;
 height: 400px;
 }
 
+
+@media (max-width: 768px) {
+
+  .profile-image {
+    height: 220px;
+  }
+
+  .profile-image:hover img {
+    transform: none; /* disable hover weirdness */
+  }
+
 }
