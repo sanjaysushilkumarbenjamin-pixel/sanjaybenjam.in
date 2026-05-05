@@ -1,0 +1,107 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background: #020617;
+  color: white;
+}
+
+/* NAV */
+.nav {
+  position: fixed;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 40px;
+  z-index: 10;
+}
+
+.nav a {
+  color: white;
+  margin-left: 20px;
+  text-decoration: none;
+}
+
+/* HERO */
+.hero {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+canvas {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.hero-content {
+  text-align: center;
+  z-index: 2;
+}
+
+h1 {
+  font-size: 4rem;
+  text-shadow: 0 0 20px cyan;
+}
+
+p {
+  margin: 20px 0;
+  color: #cbd5f5;
+}
+
+.btn-primary {
+  background: cyan;
+  color: black;
+  padding: 12px 20px;
+  margin-right: 10px;
+  text-decoration: none;
+}
+
+.btn-secondary {
+  border: 1px solid cyan;
+  padding: 12px 20px;
+  color: cyan;
+  text-decoration: none;
+}
+
+/* VALUE */
+.value {
+  padding: 100px 40px;
+  text-align: center;
+}
+
+.grid {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 40px;
+}
+
+/* SYSTEMS */
+.systems {
+  padding: 100px 40px;
+}
+
+.cards {
+  display: flex;
+  gap: 20px;
+}
+
+.card {
+  background: #0f172a;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+/* CTA */
+.cta-final {
+  text-align: center;
+  padding: 100px 20px;
+}
