@@ -98,6 +98,12 @@ p {
   background: #0f172a;
   padding: 20px;
   border-radius: 10px;
+   transition: all 0.4s ease;
+}
+
+.card:hover {
+  transform: translateY(-10px) scale(1.02);
+  box-shadow: 0 20px 40px rgba(0,255,255,0.2);
 }
 
 /* CTA */
