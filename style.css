@@ -1,134 +1,78 @@
-/* ===============================
-RESET
-=============================== */
-
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   }
 
-img {
-max-width: 100%;
-height: auto;
-display: block;
-}
-
 body {
 font-family: 'Inter', sans-serif;
 background: #020617;
-color: #e5e7eb;
+color: white;
 }
 
-/* ===============================
-NAV
-=============================== */
+img {
+max-width: 100%;
+display: block;
+}
+
+/* NAV */
 .nav {
 position: fixed;
-top: 0;
 width: 100%;
-padding: 12px 20px;
-display: flex;
-justify-content: space-between;
-align-items: center;
-
-background: rgba(2,6,23,0.85);
-backdrop-filter: blur(10px);
-z-index: 1000;
+padding: 15px;
+background: #020617;
 }
 
-.logo img {
-height: 30px;
-}
-
-/* ===============================
-HERO
-=============================== */
+/* HERO */
 .hero {
 padding: 120px 20px 60px;
 text-align: center;
 }
 
-.hero-content {
-max-width: 600px;
-margin: auto;
-}
-
 h1 {
-font-size: 2.2rem;
-margin-bottom: 12px;
-}
-
-.hero p {
-color: #94a3b8;
+font-size: 2rem;
 }
 
 .cta {
 margin-top: 20px;
-display: flex;
-flex-direction: column;
-gap: 10px;
 }
 
 .btn-primary {
 background: #00ffff;
+padding: 10px 20px;
+border-radius: 6px;
 color: black;
-padding: 12px;
-border-radius: 8px;
 text-decoration: none;
 }
 
-.btn-secondary {
-border: 1px solid #00ffff;
-color: #00ffff;
-padding: 12px;
-border-radius: 8px;
-text-decoration: none;
-}
-
-/* ===============================
-SECTIONS
-=============================== */
-section {
-padding: 70px 20px;
-text-align: center;
-}
-
+/* CARDS */
 .cards {
 display: flex;
 flex-direction: column;
-gap: 15px;
+gap: 10px;
+padding: 20px;
 }
 
 .card {
-background: rgba(255,255,255,0.03);
+background: #111;
 padding: 20px;
-border-radius: 12px;
+border-radius: 10px;
 }
 
-/* ===============================
-BIO (FIXED)
-=============================== */
-.bio {
-padding: 80px 20px;
-}
-
+/* BIO */
 .bio-container {
-max-width: 1000px;
-margin: auto;
-
 display: flex;
 flex-direction: column;
 align-items: center;
-gap: 30px;
+gap: 20px;
+padding: 40px 20px;
 }
 
 .bio-image {
-width: 100%;
-max-width: 280px;
-height: 240px;
+width: 250px;
+height: 250px;
 overflow: hidden;
-border-radius: 12px;
+border-radius: 10px;
 }
 
 .bio-image img {
@@ -137,46 +81,27 @@ height: 100%;
 object-fit: cover;
 }
 
-.bio-content {
-max-width: 500px;
+/* FORM */
+.lead {
+padding: 40px 20px;
 text-align: center;
 }
 
-/* ===============================
-FORM
-=============================== */
 .lead form {
-margin-top: 20px;
 display: flex;
 flex-direction: column;
 gap: 10px;
+margin-top: 20px;
 }
 
-.lead input,
-.lead button {
-padding: 12px;
+.lead input, .lead button {
+padding: 10px;
 border-radius: 6px;
 border: none;
 }
 
-.lead button {
-background: #00ffff;
-}
-
-/* ===============================
-DESKTOP
-=============================== */
+/* DESKTOP */
 @media (min-width: 768px) {
-
-h1 {
-font-size: 4rem;
-}
-
-.cta {
-flex-direction: row;
-justify-content: center;
-}
-
 .cards {
 flex-direction: row;
 justify-content: center;
@@ -184,16 +109,5 @@ justify-content: center;
 
 .bio-container {
 flex-direction: row;
-gap: 60px;
-align-items: center;
-}
-
-.bio-content {
-text-align: left;
-}
-
-.lead form {
-flex-direction: row;
-justify-content: center;
 }
 }
