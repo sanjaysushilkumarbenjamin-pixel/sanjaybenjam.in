@@ -10,6 +10,11 @@ body {
    background: radial-gradient(circle at center, #020617, #000);
   color: white;
 }
+.logo img {
+  height: 36px;
+  object-fit: contain;
+  filter: drop-shadow(0 0 8px rgba(0,255,255,0.3));
+}
 
 .hero h1 {
   background: linear-gradient(to right, cyan, white);
