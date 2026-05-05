@@ -423,6 +423,18 @@ margin-right: var(--space-2);
   filter: blur(40px);
   z-index: -1;
 }
+
+/* 3D CONTAINER */
+.profile-image {
+  perspective: 1000px;
+}
+
+/* INNER TRANSFORM ELEMENT */
+.profile-image img {
+  transform-style: preserve-3d;
+  transition: transform 0.2s ease, box-shadow 0.3s ease;
+  will-change: transform;
+}  
   
 @media (max-width: 768px) {
 
