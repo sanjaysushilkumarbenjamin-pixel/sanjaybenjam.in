@@ -296,6 +296,9 @@ justify-content: center;
 
 .lead form {
 flex-direction: row;
+    background: rgba(255,255,255,0.03);
+  padding: 12px;
+  border-radius: 12px;
 }
 
 .lead input {
