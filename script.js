@@ -78,8 +78,8 @@ if (canvas) {
   function animate() {
     requestAnimationFrame(animate);
 
-    particles.rotation.y += 0.0005;
-    particles.rotation.x += 0.0002;
+    particles.rotation.y += 0.0003;
+    particles.rotation.x += 0.0001;
 
     // PARALLAX
     camera.position.x += (mouse.x * 1.2 - camera.position.x) * 0.05;
