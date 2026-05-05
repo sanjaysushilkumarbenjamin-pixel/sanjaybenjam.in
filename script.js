@@ -38,6 +38,7 @@ function animate() {
 animate();
 
 gsap.registerPlugin(ScrollTrigger);
+ScrollTrigger.refresh();
 
 // HERO TEXT REVEAL
 gsap.from(".hero-content h1", {
@@ -95,4 +96,12 @@ gsap.from(".story h2, .story p, .story h3", {
     trigger: ".story",
     start: "top 80%"
   }
+});
+
+gsap.to(".hero-content", {
+  y: 10,
+  repeat: -1,
+  yoyo: true,
+  duration: 2,
+  ease: "power1.inOut"
 });
