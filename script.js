@@ -59,6 +59,7 @@ gsap.utils.toArray("section").forEach(section => {
   });
 });
 
+
 document.addEventListener("mousemove", e => {
   document.body.style.backgroundPosition = `${e.clientX}px ${e.clientY}px`;
 });
