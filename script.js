@@ -21,7 +21,7 @@ renderer.setPixelRatio(window.devicePixelRatio);
 
 // PARTICLES
 const particlesGeometry = new THREE.BufferGeometry();
-const particlesCount = 1000;
+const particlesCount = 700;
 
 const positions = new Float32Array(particlesCount * 3);
 const originalPositions = new Float32Array(particlesCount * 3);
