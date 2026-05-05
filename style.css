@@ -279,3 +279,8 @@ section {
 .lead input {
   text-align: center;
 }
+
+.lead .btn-primary {
+  display: inline-block;
+  margin: 15px auto;
+}
