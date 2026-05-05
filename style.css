@@ -406,7 +406,7 @@ border-radius: 12px;
 }
 
 .profile-image {
-height: 400px;
+ max-width: 260px;
 }
 
 
@@ -420,4 +420,18 @@ height: 400px;
     transform: none; /* disable hover weirdness */
   }
 
+section {
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+.btn-primary {
+  box-shadow: 0 15px 40px rgba(0,255,255,0.25);
+}
+
+section .btn-primary {
+  opacity: 0.9;
+}
+
+.hero .btn-primary {
+  opacity: 1;
 }
