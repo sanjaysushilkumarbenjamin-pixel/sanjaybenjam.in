@@ -64,13 +64,14 @@ document.addEventListener("mousemove", e => {
 });
 
 gsap.from(".card", {
+  opacity: 0,
+  y: 80,
+  stagger: 0.2,
+  duration: 1,
   scrollTrigger: {
     trigger: ".cards",
     start: "top 80%"
-  },
-  opacity: 0,
-  y: 100,
-  stagger: 0.2
+  }
 });
 
 gsap.from(".authority div", {
