@@ -72,8 +72,8 @@ function animate() {
   particlesMesh.rotation.x += 0.0002;
 
   // PARALLAX CAMERA
-  camera.position.x += (mouse.x * 1.5 - camera.position.x) * 0.05;
-  camera.position.y += (-mouse.y * 1.5 - camera.position.y) * 0.05;
+camera.position.x += (mouse.x * 2 - camera.position.x) * 0.08;
+camera.position.y += (-mouse.y * 2 - camera.position.y) * 0.08;
 
   // PARTICLE WAVE MOTION
   const pos = particlesGeometry.attributes.position.array;
