@@ -339,6 +339,21 @@ FORM (FIXED MOBILE)
   white-space: nowrap;
 }
 
+@media (max-width: 768px) {
+
+  .lead form {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .lead input,
+  .lead button {
+    width: 100%;
+    max-width: 280px;
+  }
+
+}
+
 .urgency {
 color: #f87171;
 font-size: 0.85rem;
