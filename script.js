@@ -178,6 +178,9 @@ const card = document.querySelector(".profile-image");
 if (card) {
 
   card.addEventListener("mousemove", (e) => {
+    card.style.boxShadow = `
+  ${rotateY * 2}px ${rotateX * 2}px 40px rgba(0,255,255,0.2)
+`;
     const rect = card.getBoundingClientRect();
 
     const x = e.clientX - rect.left;
