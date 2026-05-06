@@ -633,3 +633,15 @@ PROOF SECTION
 section {
   padding: 140px 20px;
 }
+
+.urgency {
+  color: #f87171;
+
+  margin: 20px auto 30px;
+
+  font-size: 1rem;
+
+  text-align: center;
+
+  width: 100%;
+}
