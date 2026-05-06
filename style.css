@@ -35,11 +35,26 @@ body {
 /* NAV */
 .nav {
   position: fixed;
-  width: 100%;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: calc(100% - 40px);
+  max-width: 1200px;
+
   display: flex;
   justify-content: space-between;
-  padding: 20px 40px;
-  z-index: 10;
+  align-items: center;
+
+  padding: 14px 24px;
+
+  background: rgba(255,255,255,0.05);
+  backdrop-filter: blur(20px);
+
+  border: 1px solid rgba(255,255,255,0.08);
+
+  border-radius: 20px;
+
+  z-index: 999;
 }
 
 .nav a {
