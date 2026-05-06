@@ -712,3 +712,81 @@ section {
 
   transform: translate(-50%, -50%);
 }
+
+/* ==================================
+FLOATING GRADIENT ORBS
+================================== */
+
+.orb {
+  position: absolute;
+
+  border-radius: 50%;
+
+  filter: blur(100px);
+
+  opacity: 0.18;
+
+  pointer-events: none;
+
+  z-index: 1;
+
+  animation: floatOrb 14s ease-in-out infinite;
+}
+
+/* ORB 1 */
+
+.orb1 {
+  width: 420px;
+  height: 420px;
+
+  background: cyan;
+
+  top: 10%;
+  left: -10%;
+}
+
+/* ORB 2 */
+
+.orb2 {
+  width: 360px;
+  height: 360px;
+
+  background: #3b82f6;
+
+  top: 60%;
+  right: -5%;
+
+  animation-delay: 3s;
+}
+
+/* ORB 3 */
+
+.orb3 {
+  width: 300px;
+  height: 300px;
+
+  background: #8b5cf6;
+
+  bottom: 5%;
+  left: 30%;
+
+  animation-delay: 6s;
+}
+
+@keyframes floatOrb {
+
+  0%, 100% {
+    transform:
+      translateY(0px)
+      translateX(0px)
+      scale(1);
+  }
+
+  50% {
+    transform:
+      translateY(-40px)
+      translateX(20px)
+      scale(1.08);
+  }
+
+}
