@@ -134,6 +134,7 @@ p {
 .value {
   padding: 100px 40px;
   text-align: center;
+  background: #020817;
 }
 
 .grid {
@@ -147,6 +148,7 @@ p {
 .systems {
   padding: 100px 40px;
   text-align: center;
+  background: #020617;
 }
 
 .systems h2 {
@@ -282,6 +284,11 @@ section {
 }
 .lead {
   text-align: center;
+    background: linear-gradient(
+    to bottom,
+    #020617,
+    #061425
+  );
 }
 
 .lead form {
