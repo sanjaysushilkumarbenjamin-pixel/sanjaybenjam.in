@@ -107,6 +107,9 @@ p {
   font-size: 1rem;
   margin: 20px 0;
   color: #cbd5f5;
+  max-width: 680px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .btn-primary {
