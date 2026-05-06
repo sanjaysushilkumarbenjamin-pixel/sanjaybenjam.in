@@ -219,13 +219,6 @@ p {
 .card p {
   color: #94a3b8;
 }
-
-/* 🔥 PREMIUM 3D HOVER */
-.card {
-  transform-style: preserve-3d;
-  perspective: 1000px;
-}
-
 .card:hover {
   transform:
     translateY(-10px)
