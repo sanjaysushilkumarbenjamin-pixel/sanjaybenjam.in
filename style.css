@@ -940,9 +940,8 @@ HERO AI DASHBOARD
 
 .dashboard-top {
   display: flex;
-
+  justify-content: center;
   gap: 8px;
-
   margin-bottom: 30px;
 }
 
@@ -959,22 +958,19 @@ HERO AI DASHBOARD
 
 .dashboard-main h3 {
   font-size: 2rem;
-
   margin-bottom: 40px;
-
   text-align: left;
+  text-align: center;
+  color: white;
 }
 
 /* METRICS */
 
 .dashboard-metrics {
   display: grid;
-
   grid-template-columns:
     repeat(3, 1fr);
-
   gap: 20px;
-
   margin-bottom: 50px;
 }
 
