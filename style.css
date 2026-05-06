@@ -829,3 +829,14 @@ FLOATING GRADIENT ORBS
 .card:hover::before {
   opacity: 1;
 }
+
+.stat h3 {
+  display: flex;
+
+  justify-content: center;
+  align-items: baseline;
+
+  gap: 2px;
+
+  line-height: 1;
+}
