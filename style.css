@@ -79,15 +79,16 @@ body {
 /* HERO */
 .hero {
   position: relative;
-  min-height: 100vh;
+  min-height: auto;
   display: flex;
   align-items: center;
   justify-content: center;
   overflow: hidden;
-  padding:140px 20px 80px;
+  padding:
+  160px 20px 100px;
   text-shadow:
-  0 0 12px rgba(0,255,255,0.25),
-  0 0 40px rgba(0,255,255,0.12);
+  0 0 8px rgba(0,255,255,0.18),
+  0 0 24px rgba(0,255,255,0.08);
 }
 
 canvas {
@@ -118,7 +119,7 @@ canvas {
 h1 {
   font-weight: 700;
   text-shadow: 0 0 20px cyan;
-  font-size: clamp(3rem, 8vw, 6rem);
+  font-size: clamp(3rem, 7vw, 5.2rem);
   line-height: 0.95;
   letter-spacing: -0.05em;
 }
@@ -915,7 +916,7 @@ HERO AI DASHBOARD
 .dashboard-main {
   position: relative;
   width: 100%;
-  max-width: 680px;
+  max-width: 620px;
   padding: 40px;
   border-radius: 32px;
   background:
@@ -1013,16 +1014,11 @@ HERO AI DASHBOARD
 
 .dashboard-graph {
   position: relative;
-
-  height: 120px;
-
+  height: 70px;
   border-radius: 20px;
-
   overflow: hidden;
-
   background:
     rgba(255,255,255,0.03);
-
   border:
     1px solid rgba(255,255,255,0.06);
 }
@@ -1044,7 +1040,7 @@ HERO AI DASHBOARD
   top: 50%;
 
   animation:
-    graphMove 4s linear infinite;
+    graphMove 4s linear infinite;0
 }
 
 /* FLOATING PANELS */
@@ -1067,13 +1063,13 @@ HERO AI DASHBOARD
 }
 
 .panel-left {
-  left: -140px;
+  left: -90px;
   top: 50%;
   transform: translateY(-50%);
 }
 
 .panel-right {
-  right: -160px;
+  right: -100px;
   bottom: 80px;
 }
 
@@ -1088,7 +1084,7 @@ HERO AI DASHBOARD
 
   50% {
     transform:
-      translateY(-10px);
+      translateY(-4px);
   }
 
 }
