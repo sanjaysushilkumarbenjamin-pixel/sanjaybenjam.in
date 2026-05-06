@@ -291,3 +291,16 @@ window.addEventListener("mousemove", (e) => {
   glow.style.top = e.clientY + "px";
 
 });
+
+window.addEventListener("mousemove", (e) => {
+
+  const x = (window.innerWidth / 2 - e.clientX) / 40;
+  const y = (window.innerHeight / 2 - e.clientY) / 40;
+
+  gsap.to(".hero-content", {
+    x: -x,
+    y: -y,
+    duration: 1.5
+  });
+
+});
