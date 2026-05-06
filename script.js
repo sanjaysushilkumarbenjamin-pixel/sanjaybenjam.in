@@ -1,6 +1,6 @@
-/* =========================
-THREE.JS PARTICLE SYSTEM
-========================= */
+/* ===================================
+AI NEURAL NETWORK BACKGROUND
+=================================== */
 
 const scene = new THREE.Scene();
 
@@ -11,69 +11,122 @@ const camera = new THREE.PerspectiveCamera(
   1000
 );
 
+camera.position.z = 40;
+
+/* RENDERER */
+
 const renderer = new THREE.WebGLRenderer({
   canvas: document.querySelector("#bg"),
-  alpha: true
+  alpha: true,
+  antialias: true
 });
 
-renderer.setPixelRatio(window.devicePixelRatio);
-renderer.setSize(window.innerWidth, window.innerHeight);
+renderer.setSize(
+  window.innerWidth,
+  window.innerHeight
+);
+
+renderer.setPixelRatio(
+  window.devicePixelRatio
+);
+
 renderer.setClearColor(0x000000, 0);
-camera.position.z = 30;
 
 /* PARTICLES */
 
-const particlesGeometry = new THREE.BufferGeometry();
+const particlesCount = 160;
 
-const particlesCount = 2500;
+const positions = [];
+const velocities = [];
 
-const posArray = new Float32Array(
-  particlesCount * 3
-);
+for (let i = 0; i < particlesCount; i++) {
 
-for (let i = 0; i < particlesCount * 3; i++) {
+  positions.push({
+    x: (Math.random() - 0.5) * 80,
+    y: (Math.random() - 0.5) * 80,
+    z: (Math.random() - 0.5) * 80
+  });
 
-  posArray[i] = (Math.random() - 0.5) * 120;
+  velocities.push({
+    x: (Math.random() - 0.5) * 0.02,
+    y: (Math.random() - 0.5) * 0.02,
+    z: (Math.random() - 0.5) * 0.02
+  });
 
 }
 
-particlesGeometry.setAttribute(
-  'position',
-  new THREE.BufferAttribute(posArray, 3)
+/* GEOMETRY */
+
+const geometry = new THREE.BufferGeometry();
+
+const vertices = new Float32Array(
+  particlesCount * 3
+);
+
+for (let i = 0; i < particlesCount; i++) {
+
+  vertices[i * 3] =
+    positions[i].x;
+
+  vertices[i * 3 + 1] =
+    positions[i].y;
+
+  vertices[i * 3 + 2] =
+    positions[i].z;
+}
+
+geometry.setAttribute(
+  "position",
+  new THREE.BufferAttribute(vertices, 3)
 );
 
 /* MATERIAL */
 
-const particlesMaterial = new THREE.PointsMaterial({
+const material = new THREE.PointsMaterial({
 
-  size: 0.08,
+  color: 0x00ffff,
+
+  size: 0.18,
+
+  transparent: true,
+
+  opacity: 0.85
+});
+
+/* POINTS */
+
+const points = new THREE.Points(
+  geometry,
+  material
+);
+
+scene.add(points);
+
+/* LINE CONNECTIONS */
+
+const lineMaterial = new THREE.LineBasicMaterial({
 
   color: 0x00ffff,
 
   transparent: true,
 
-  opacity: 0.7
+  opacity: 0.12
 });
 
-/* MESH */
-
-const particlesMesh = new THREE.Points(
-  particlesGeometry,
-  particlesMaterial
-);
-
-scene.add(particlesMesh);
+let linesMesh;
 
 /* MOUSE */
 
 let mouseX = 0;
 let mouseY = 0;
 
-document.addEventListener("mousemove", (event) => {
+window.addEventListener("mousemove", (e) => {
 
-  mouseX = event.clientX;
-  mouseY = event.clientY;
+  mouseX =
+    (e.clientX / window.innerWidth - 0.5) * 2;
 
+  mouseY =
+    (e.clientY / window.innerHeight - 0.5) * 2;
 });
 
 /* ANIMATION */
@@ -82,14 +135,112 @@ function animate() {
 
   requestAnimationFrame(animate);
 
-  particlesMesh.rotation.y += 0.0008;
-  particlesMesh.rotation.x += 0.0003;
+  /* MOVE PARTICLES */
 
-  particlesMesh.rotation.y +=
-    (mouseX * 0.0000008);
+  const posArray =
+    geometry.attributes.position.array;
 
-  particlesMesh.rotation.x +=
-    (mouseY * 0.0000008);
+  for (let i = 0; i < particlesCount; i++) {
+
+    positions[i].x += velocities[i].x;
+    positions[i].y += velocities[i].y;
+    positions[i].z += velocities[i].z;
+
+    /* BOUNDS */
+
+    if (positions[i].x > 40 || positions[i].x < -40)
+      velocities[i].x *= -1;
+
+    if (positions[i].y > 40 || positions[i].y < -40)
+      velocities[i].y *= -1;
+
+    if (positions[i].z > 40 || positions[i].z < -40)
+      velocities[i].z *= -1;
+
+    posArray[i * 3] =
+      positions[i].x;
+
+    posArray[i * 3 + 1] =
+      positions[i].y;
+
+    posArray[i * 3 + 2] =
+      positions[i].z;
+  }
+
+  geometry.attributes.position.needsUpdate = true;
+
+  /* REMOVE OLD LINES */
+
+  if (linesMesh) {
+    scene.remove(linesMesh);
+  }
+
+  /* CREATE CONNECTIONS */
+
+  const linePositions = [];
+
+  for (let i = 0; i < particlesCount; i++) {
+
+    for (let j = i + 1; j < particlesCount; j++) {
+
+      const dx =
+        positions[i].x - positions[j].x;
+
+      const dy =
+        positions[i].y - positions[j].y;
+
+      const dz =
+        positions[i].z - positions[j].z;
+
+      const distance =
+        Math.sqrt(dx * dx + dy * dy + dz * dz);
+
+      if (distance < 12) {
+
+        linePositions.push(
+          positions[i].x,
+          positions[i].y,
+          positions[i].z
+        );
+
+        linePositions.push(
+          positions[j].x,
+          positions[j].y,
+          positions[j].z
+        );
+      }
+    }
+  }
+
+  const lineGeometry =
+    new THREE.BufferGeometry();
+
+  lineGeometry.setAttribute(
+    "position",
+    new THREE.Float32BufferAttribute(
+      linePositions,
+      3
+    )
+  );
+
+  linesMesh = new THREE.LineSegments(
+    lineGeometry,
+    lineMaterial
+  );
+
+  scene.add(linesMesh);
+
+  /* SUBTLE ROTATION */
+
+  scene.rotation.y += 0.0008;
+
+  /* MOUSE PARALLAX */
+
+  scene.rotation.x +=
+    (mouseY * 0.02 - scene.rotation.x) * 0.02;
+
+  scene.rotation.y +=
+    (mouseX * 0.02 - scene.rotation.y) * 0.02;
 
   renderer.render(scene, camera);
 }
@@ -109,12 +260,11 @@ window.addEventListener("resize", () => {
     window.innerWidth,
     window.innerHeight
   );
-
 });
 
-/* =========================
-GSAP ANIMATIONS
-========================= */
+/* ===================================
+GSAP PREMIUM ANIMATIONS
+=================================== */
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -125,7 +275,7 @@ gsap.from(".hero-content", {
   opacity: 0,
   y: 100,
 
-  duration: 1.4,
+  duration: 1.5,
 
   ease: "power4.out"
 });
