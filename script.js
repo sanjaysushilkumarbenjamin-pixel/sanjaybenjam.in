@@ -387,29 +387,8 @@ const counters =
 
 counters.forEach(counter => {
 
-  const updateCounter = () => {
-
-    const target =
-      +counter.getAttribute("data-target");
-
-    const current =
-      +counter.innerText;
-
-    const increment =
-      target / 100;
-
-    if (current < target) {
-
-      counter.innerText =
-        Math.ceil(current + increment);
-
-      setTimeout(updateCounter, 20);
-
-    } else {
-
-      counter.innerText = target;
-    }
-  };
+  const target =
+    +counter.getAttribute("data-target");
 
   ScrollTrigger.create({
 
@@ -417,7 +396,34 @@ counters.forEach(counter => {
 
     start: "top 85%",
 
-    onEnter: updateCounter
+    once: true,
+
+    onEnter: () => {
+
+      let current = 0;
+
+      const updateCounter = () => {
+
+        const increment =
+          target / 60;
+
+        current += increment;
+
+        if (current < target) {
+
+          counter.innerText =
+            Math.ceil(current);
+
+          requestAnimationFrame(updateCounter);
+
+        } else {
+
+          counter.innerText = target;
+        }
+      };
+
+      updateCounter();
+    }
   });
 
 });
