@@ -1,6 +1,6 @@
-// INTERACTIVE THREE.JS PARTICLES
-
-const canvas = document.getElementById("bg");
+/* =========================
+THREE.JS PARTICLE SYSTEM
+========================= */
 
 const scene = new THREE.Scene();
 
@@ -12,40 +12,51 @@ const camera = new THREE.PerspectiveCamera(
 );
 
 const renderer = new THREE.WebGLRenderer({
-  canvas: canvas,
+  canvas: document.querySelector("#bg"),
   alpha: true
 });
 
-renderer.setSize(window.innerWidth, window.innerHeight);
 renderer.setPixelRatio(window.devicePixelRatio);
+renderer.setSize(window.innerWidth, window.innerHeight);
 
-// PARTICLES
+camera.position.z = 30;
+
+/* PARTICLES */
+
 const particlesGeometry = new THREE.BufferGeometry();
-const particlesCount = 700;
 
-const positions = new Float32Array(particlesCount * 3);
-const originalPositions = new Float32Array(particlesCount * 3);
+const particlesCount = 2500;
+
+const posArray = new Float32Array(
+  particlesCount * 3
+);
 
 for (let i = 0; i < particlesCount * 3; i++) {
-  const val = (Math.random() - 0.5) * 10;
-  positions[i] = val;
-  originalPositions[i] = val;
+
+  posArray[i] = (Math.random() - 0.5) * 120;
+
 }
 
 particlesGeometry.setAttribute(
-  "position",
-  new THREE.BufferAttribute(positions, 3)
+  'position',
+  new THREE.BufferAttribute(posArray, 3)
 );
 
-// MATERIAL
+/* MATERIAL */
+
 const particlesMaterial = new THREE.PointsMaterial({
-  size: 0.02,
+
+  size: 0.12,
+
   color: 0x00ffff,
+
   transparent: true,
-  opacity: 0.8
+
+  opacity: 0.7
 });
 
-// MESH
+/* MESH */
+
 const particlesMesh = new THREE.Points(
   particlesGeometry,
   particlesMaterial
@@ -53,185 +64,80 @@ const particlesMesh = new THREE.Points(
 
 scene.add(particlesMesh);
 
-camera.position.z = 5;
+/* MOUSE */
 
-// 🖱️ MOUSE TRACKING
-let mouse = { x: 0, y: 0 };
+let mouseX = 0;
+let mouseY = 0;
 
-window.addEventListener("mousemove", (event) => {
-  mouse.x = (event.clientX / window.innerWidth - 0.5) * 2;
-  mouse.y = (event.clientY / window.innerHeight - 0.5) * 2;
+document.addEventListener("mousemove", (event) => {
+
+  mouseX = event.clientX;
+  mouseY = event.clientY;
+
 });
 
-// ANIMATION
+/* ANIMATION */
+
 function animate() {
+
   requestAnimationFrame(animate);
 
-  // subtle rotation
-  particlesMesh.rotation.y += 0.0005;
-  particlesMesh.rotation.x += 0.0002;
+  particlesMesh.rotation.y += 0.0008;
+  particlesMesh.rotation.x += 0.0003;
 
-  // PARALLAX CAMERA
-camera.position.x += (mouse.x * 2 - camera.position.x) * 0.08;
-camera.position.y += (-mouse.y * 2 - camera.position.y) * 0.08;
+  particlesMesh.rotation.y +=
+    (mouseX * 0.0000008);
 
-  // PARTICLE WAVE MOTION
-  const pos = particlesGeometry.attributes.position.array;
-
-  for (let i = 0; i < pos.length; i += 3) {
-    const x = originalPositions[i];
-    const y = originalPositions[i + 1];
-
-    pos[i + 2] =
-      originalPositions[i + 2] +
-      Math.sin(Date.now() * 0.001 + x + y) * 0.05;
-  }
-
-  particlesGeometry.attributes.position.needsUpdate = true;
+  particlesMesh.rotation.x +=
+    (mouseY * 0.0000008);
 
   renderer.render(scene, camera);
 }
 
 animate();
 
-// RESPONSIVE
+/* RESPONSIVE */
+
 window.addEventListener("resize", () => {
-  renderer.setSize(window.innerWidth, window.innerHeight);
-  camera.aspect = window.innerWidth / window.innerHeight;
+
+  camera.aspect =
+    window.innerWidth / window.innerHeight;
+
   camera.updateProjectionMatrix();
+
+  renderer.setSize(
+    window.innerWidth,
+    window.innerHeight
+  );
+
 });
 
-
-
-const scene = new THREE.Scene();
-const camera = new THREE.PerspectiveCamera(75, window.innerWidth/window.innerHeight, 0.1, 1000);
-
-const renderer = new THREE.WebGLRenderer({ canvas: document.getElementById("bg") });
-renderer.setSize(window.innerWidth, window.innerHeight);
-
-const geometry = new THREE.SphereGeometry(2, 32, 32);
-const material = new THREE.MeshBasicMaterial({ wireframe: true, color: 0x00ffff });
-
-const sphere = new THREE.Mesh(geometry, material);
-scene.add(sphere);
-
-camera.position.z = 5;
-
-function animate() {
-  requestAnimationFrame(animate);
-  sphere.rotation.x += 0.002;
-  sphere.rotation.y += 0.003;
-  renderer.render(scene, camera);
-}
-
-animate();
-
-function animate() {
-  ctx.clearRect(0, 0, canvas.width, canvas.height);
-
-  particles.forEach(p => {
-    p.x += p.speedX;
-    p.y += p.speedY;
-
-    ctx.fillStyle = "cyan";
-    ctx.fillRect(p.x, p.y, p.size, p.size);
-  });
-
-  requestAnimationFrame(animate);
-}
-
-animate();
-
-
-
-
-// HERO TEXT REVEAL
-gsap.from(".hero-content h1", {
-  opacity: 0,
-  y: 50,
-  duration: 1.5
-});
-
-// SECTIONS FADE IN
-gsap.utils.toArray("section").forEach(section => {
-  gsap.from(section, {
-    opacity: 0,
-    y: 80,
-    duration: 1,
-    scrollTrigger: {
-      trigger: section,
-      start: "top 80%"
-    }
-  });
-});
-
-
-document.addEventListener("mousemove", e => {
-  document.body.style.backgroundPosition = `${e.clientX}px ${e.clientY}px`;
-});
-
-gsap.from(".card", {
-  opacity: 0,
-  y: 80,
-  stagger: 0.2,
-  duration: 1,
-  scrollTrigger: {
-    trigger: ".cards",
-    start: "top 80%"
-  }
-});
-
-gsap.from(".authority div", {
-  opacity: 0,
-  y: 30,
-  stagger: 0.2,
-  duration: 1,
-  scrollTrigger: {
-    trigger: ".authority",
-    start: "top 80%"
-  }
-});
-
-gsap.from(".story h2, .story p, .story h3", {
-  opacity: 0,
-  y: 40,
-  stagger: 0.3,
-  duration: 1,
-  scrollTrigger: {
-    trigger: ".story",
-    start: "top 80%"
-  }
-});
-
-gsap.to(".hero-content", {
-  y: 10,
-  repeat: -1,
-  yoyo: true,
-  duration: 2,
-  ease: "power1.inOut"
-});
-
-
+/* =========================
+GSAP ANIMATIONS
+========================= */
 
 gsap.registerPlugin(ScrollTrigger);
-ScrollTrigger.refresh();
 
 /* HERO */
 
 gsap.from(".hero-content", {
+
   opacity: 0,
   y: 100,
+
   duration: 1.4,
+
   ease: "power4.out"
 });
 
 /* NAV */
 
 gsap.from(".nav", {
+
   opacity: 0,
   y: -40,
-  duration: 1,
-  delay: 0.3
+
+  duration: 1
 });
 
 /* CARDS */
@@ -264,6 +170,7 @@ gsap.from(".profile-image", {
 
   opacity: 0,
   x: -100,
+
   duration: 1.2
 });
 
@@ -276,27 +183,6 @@ gsap.from(".bio-content", {
 
   opacity: 0,
   x: 100,
+
   duration: 1.2
-});
-
-const glow = document.querySelector(".cursor-glow");
-
-window.addEventListener("mousemove", (e) => {
-
-  glow.style.left = e.clientX + "px";
-  glow.style.top = e.clientY + "px";
-
-});
-
-window.addEventListener("mousemove", (e) => {
-
-  const x = (window.innerWidth / 2 - e.clientX) / 40;
-  const y = (window.innerHeight / 2 - e.clientY) / 40;
-
-  gsap.to(".hero-content", {
-    x: -x,
-    y: -y,
-    duration: 1.5
-  });
-
 });
