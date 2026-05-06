@@ -217,3 +217,68 @@ window.addEventListener("mousemove", (e) => {
   glow.style.left = e.clientX + "px";
   glow.style.top = e.clientY + "px";
 });
+
+gsap.registerPlugin(ScrollTrigger);
+
+/* HERO */
+
+gsap.from(".hero-content", {
+  opacity: 0,
+  y: 100,
+  duration: 1.4,
+  ease: "power4.out"
+});
+
+/* NAV */
+
+gsap.from(".nav", {
+  opacity: 0,
+  y: -40,
+  duration: 1,
+  delay: 0.3
+});
+
+/* CARDS */
+
+gsap.from(".card", {
+
+  scrollTrigger: {
+    trigger: ".cards",
+    start: "top 80%"
+  },
+
+  opacity: 0,
+  y: 80,
+
+  stagger: 0.2,
+
+  duration: 1.2,
+
+  ease: "power3.out"
+});
+
+/* BIO */
+
+gsap.from(".profile-image", {
+
+  scrollTrigger: {
+    trigger: ".bio",
+    start: "top 80%"
+  },
+
+  opacity: 0,
+  x: -100,
+  duration: 1.2
+});
+
+gsap.from(".bio-content", {
+
+  scrollTrigger: {
+    trigger: ".bio",
+    start: "top 80%"
+  },
+
+  opacity: 0,
+  x: 100,
+  duration: 1.2
+});
