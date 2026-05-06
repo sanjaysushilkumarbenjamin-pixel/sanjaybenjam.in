@@ -26,7 +26,7 @@ body {
 } 
 
 .logo img {
-  height: 52px;
+  height: 58px;
   object-fit: contain;
   filter: drop-shadow(0 0 8px rgba(0,255,255,0.3));
 }
@@ -58,14 +58,14 @@ body {
   justify-content: space-between;
   align-items: center;
 
-  padding: 14px 24px;
+  padding: 10px 22px;
 
   background: rgba(255,255,255,0.05);
   backdrop-filter: blur(20px);
 
   border: 1px solid rgba(255,255,255,0.08);
 
-  border-radius: 20px;
+  border-radius: 16px;
 
   z-index: 999;
 }
@@ -265,7 +265,7 @@ p {
 .cta-final {
   text-align: center;
   padding: 100px 20px;
-  margin-top: 24px;
+  margin-top: 18px;
   display: flex;
   justify-content: center;
   gap: 16px;
@@ -930,7 +930,7 @@ HERO AI DASHBOARD
   backdrop-filter: blur(24px);
   overflow: visible;
   box-shadow:
-  0 30px 100px rgba(0,255,255,0.10),
+  0 20px 70px rgba(0,255,255,0.07),
   inset 0 1px 0 rgba(255,255,255,0.06);
   animation:
     dashboardFloat 6s ease-in-out infinite;
@@ -1148,3 +1148,6 @@ HERO AI DASHBOARD
   min-height: 58px;
 }
 
+.hero-content p {
+  margin: 10px auto;
+}
