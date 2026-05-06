@@ -12,6 +12,19 @@ body {
   color: white;
 }
 
+.container {
+  width: 100%;
+  max-width: 1200px;
+
+  margin: 0 auto;
+
+  padding: 0 20px;
+
+  position: relative;
+
+  z-index: 3;
+} 
+
 .logo img {
   height: 52px;
   object-fit: contain;
@@ -74,11 +87,15 @@ body {
 
 canvas {
   position: absolute;
+
+  inset: 0;
+
   width: 100%;
   height: 100%;
-  top: 0;
-  left: 0;
+
   z-index: 1;
+
+  pointer-events: none;
 }
 
 .hero-content {
@@ -167,13 +184,11 @@ p {
   display: grid;
 
   grid-template-columns:
-    repeat(auto-fit, minmax(320px, 1fr));
+    repeat(3, 1fr);
 
   gap: 30px;
 
   margin-top: 60px;
-
-  align-items: stretch;
 }
 
 .card {
@@ -284,13 +299,6 @@ p {
   margin-bottom: 40px;
 }
 
-canvas {
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: 1;
-}
-
 .hero-content {
   position: relative;
   z-index: 2;
@@ -299,23 +307,16 @@ canvas {
 @media (max-width: 768px) {
 
   h1 {
-    font-size: 2.5rem;
+    font-size: 2.8rem;
   }
 
-@media (max-width: 768px) {
   .logo img {
-    height: 30px;
-  }
-}
-
-  .cards {
-    flex-direction: column;
-    align-items: center;
+    height: 34px;
   }
 
   .authority {
     flex-direction: column;
-    gap: 10px;
+    gap: 12px;
   }
 
 }
@@ -864,3 +865,25 @@ FLOATING GRADIENT ORBS
 
   text-align: center;
 }
+
+@media (max-width: 900px) {
+
+  .cards {
+    grid-template-columns: 1fr;
+  }
+
+}
+
+.orb {
+  z-index: 0;
+}
+
+.hero-content,
+.bio-content,
+.card,
+.stat,
+.nav {
+  position: relative;
+  z-index: 3;
+}
+
