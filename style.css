@@ -89,14 +89,17 @@ canvas {
 }
 
 h1 {
-  font-size: 5rem;
   font-weight: 700;
   text-shadow: 0 0 20px cyan;
+  font-size: clamp(3rem, 8vw, 6rem);
+  line-height: 0.95;
+  letter-spacing: -0.05em;
 }
 
 h2 {
-  font-size: 2.5rem;
   font-weight: 600;
+  font-size: clamp(2rem, 4vw, 3.5rem);
+  line-height: 1.1;
 }
 
 h3 {
@@ -105,6 +108,7 @@ h3 {
 
 p {
   font-size: 1rem;
+  line-height: 1.8;
   margin: 20px 0;
   color: #cbd5f5;
   max-width: 680px;
