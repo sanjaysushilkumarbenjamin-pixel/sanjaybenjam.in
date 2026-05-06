@@ -1207,28 +1207,39 @@ MOBILE NAVBAR FIX
 
     top: 12px;
 
-    padding: 14px 18px;
+    padding: 14px 20px;
 
     border-radius: 22px;
 
     display: flex;
 
+    justify-content: space-between;
+
+    align-items: center;
+  }
+
+  .nav-links {
+
+    display: flex;
+
     align-items: center;
 
-    justify-content: space-between;
+    gap: 22px;
   }
 
   .logo img {
-    height: 42px;
-  }
 
-  .nav-links a {
-
-    font-size: 1rem;
-
-    margin-left: 0;
+    height: 40px;
   }
 
 }
 
+/* HIDE BLUEPRINT ON MOBILE */
 
+@media (max-width: 768px) {
+
+  .nav-blueprint {
+    display: none;
+  }
+
+}
