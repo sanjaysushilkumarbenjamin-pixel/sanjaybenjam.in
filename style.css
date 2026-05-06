@@ -295,3 +295,23 @@ section {
   z-index: 2;
   filter: blur(80px);
 }
+/* ===== MOBILE CTA FIX ===== */
+
+@media (max-width: 768px) {
+
+  .cta {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 14px;
+  }
+
+  .btn-primary,
+  .btn-secondary {
+    width: 100%;
+    max-width: 280px;
+
+    text-align: center;
+  }
+
+}
