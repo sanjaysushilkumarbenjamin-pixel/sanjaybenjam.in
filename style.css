@@ -1216,34 +1216,17 @@ MOBILE NAVBAR FIX
     align-items: center;
 
     justify-content: space-between;
-
-    gap: 14px;
-	 backdrop-filter: blur(18px);
   }
 
   .logo img {
-
     height: 42px;
-  }
-
-  .nav-links {
-
-    display: flex;
-
-    align-items: center;
-
-    gap: 18px;
-
-    flex-wrap: nowrap;
   }
 
   .nav-links a {
 
+    font-size: 1rem;
+
     margin-left: 0;
-
-    font-size: 0.95rem;
-
-    white-space: nowrap;
   }
 
 }
