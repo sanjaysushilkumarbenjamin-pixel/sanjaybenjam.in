@@ -164,10 +164,16 @@ p {
 }
 
 .cards {
-  display: flex;
-  gap: 20px;
-  justify-content: center;
-  flex-wrap: wrap;
+  display: grid;
+
+  grid-template-columns:
+    repeat(auto-fit, minmax(320px, 1fr));
+
+  gap: 30px;
+
+  margin-top: 60px;
+
+  align-items: stretch;
 }
 
 .card {
