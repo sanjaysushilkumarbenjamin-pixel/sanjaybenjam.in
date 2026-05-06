@@ -74,7 +74,7 @@ section {
   z-index: 999;
 }
 
-.nav a {
+.nav-links a  {
   color: white;
   margin-left: 20px;
   text-decoration: none;
@@ -1192,3 +1192,60 @@ HERO AI DASHBOARD
 .hero-content p {
   margin: 10px auto;
 }
+
+/* ==================================
+MOBILE NAVBAR FIX
+================================== */
+
+@media (max-width: 768px) {
+
+  .nav {
+
+    width: calc(100% - 24px);
+
+    left: 12px;
+
+    top: 12px;
+
+    padding: 14px 18px;
+
+    border-radius: 22px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    gap: 14px;
+	 backdrop-filter: blur(18px);
+  }
+
+  .logo img {
+
+    height: 42px;
+  }
+
+  .nav-links {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 18px;
+
+    flex-wrap: nowrap;
+  }
+
+  .nav-links a {
+
+    margin-left: 0;
+
+    font-size: 0.95rem;
+
+    white-space: nowrap;
+  }
+
+}
+
+
