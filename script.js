@@ -18,7 +18,7 @@ const renderer = new THREE.WebGLRenderer({
 
 renderer.setPixelRatio(window.devicePixelRatio);
 renderer.setSize(window.innerWidth, window.innerHeight);
-
+renderer.setClearColor(0x000000, 0);
 camera.position.z = 30;
 
 /* PARTICLES */
