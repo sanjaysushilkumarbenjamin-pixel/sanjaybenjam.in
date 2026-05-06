@@ -276,19 +276,11 @@ p {
 AUTHORITY SECTION
 ================================== */
 
+/* ==================================
+AUTHORITY SECTION
+================================== */
+
 .authority {
-
-  display: flex;
-
-  justify-content: center;
-
-  align-items: center;
-
-  flex-wrap: wrap;
-
-  gap: 24px;
-
-  text-align: center;
 
   padding: 60px 20px;
 
@@ -302,7 +294,24 @@ AUTHORITY SECTION
     rgba(255,255,255,0.01);
 }
 
-.authority div {
+/* THIS IS THE IMPORTANT FIX */
+
+.authority .container {
+
+  display: flex;
+
+  justify-content: center;
+
+  align-items: center;
+
+  flex-wrap: wrap;
+
+  gap: 40px;
+
+  text-align: center;
+}
+
+.authority .container div {
 
   color: #94a3b8;
 
@@ -310,8 +319,22 @@ AUTHORITY SECTION
 
   line-height: 1.5;
 
-  max-width: 280px;
+  min-width: 240px;
 }
+
+/* MOBILE */
+
+@media (max-width: 768px) {
+
+  .authority .container {
+
+    flex-direction: column;
+
+    gap: 14px;
+  }
+
+}
+
 
 .story {
   text-align: center;
