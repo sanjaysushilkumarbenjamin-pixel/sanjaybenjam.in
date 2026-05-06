@@ -179,6 +179,12 @@ p {
 .card {
   position: relative;
 
+  min-height: 260px;
+
+  padding: 40px 30px;
+
+  border-radius: 28px;
+
   background:
     linear-gradient(
       135deg,
@@ -191,14 +197,20 @@ p {
 
   backdrop-filter: blur(24px);
 
-  border-radius: 28px;
-
   overflow: hidden;
 
   transition:
     transform 0.5s ease,
     box-shadow 0.5s ease,
     border-color 0.5s ease;
+
+  display: flex;
+
+  flex-direction: column;
+
+  justify-content: center;
+
+  text-align: center;
 }
 .card h3 {
   margin-bottom: 10px;
@@ -216,13 +228,14 @@ p {
 
 .card:hover {
   transform:
-    rotateX(6deg)
-    rotateY(-6deg)
-    translateY(-12px)
+    translateY(-10px)
     scale(1.02);
 
+  border-color:
+    rgba(0,255,255,0.25);
+
   box-shadow:
-    0 30px 80px rgba(0,255,255,0.18);
+    0 30px 80px rgba(0,255,255,0.14);
 }
 /* CTA */
 .cta-final {
