@@ -119,7 +119,7 @@ canvas {
 h1 {
   font-weight: 700;
   text-shadow: 0 0 20px cyan;
-  font-size: clamp(3rem, 7vw, 5.2rem);
+  font-size: clamp(3rem, 6.5vw, 4.8rem);
   line-height: 0.95;
   letter-spacing: -0.05em;
 }
@@ -930,7 +930,8 @@ HERO AI DASHBOARD
   backdrop-filter: blur(24px);
   overflow: visible;
   box-shadow:
-    0 30px 100px rgba(0,255,255,0.12);
+  0 30px 100px rgba(0,255,255,0.10),
+  inset 0 1px 0 rgba(255,255,255,0.06);
   animation:
     dashboardFloat 6s ease-in-out infinite;
 	z-index: 10;
@@ -942,7 +943,7 @@ HERO AI DASHBOARD
   display: flex;
   justify-content: center;
   gap: 8px;
-  margin-bottom: 30px;
+  margin-bottom: 18px;
 }
 
 .dot {
@@ -1010,7 +1011,7 @@ HERO AI DASHBOARD
 
 .dashboard-graph {
   position: relative;
-  height: 70px;
+  height: 50px;
   border-radius: 20px;
   overflow: hidden;
   background:
@@ -1021,7 +1022,6 @@ HERO AI DASHBOARD
 
 .graph-line {
   position: absolute;
-
   width: 200%;
   height: 2px;
 
@@ -1136,3 +1136,15 @@ HERO AI DASHBOARD
   }
 
 }
+
+.cta a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn-primary,
+.btn-secondary {
+  min-height: 58px;
+}
+
