@@ -142,8 +142,8 @@ function animate() {
 
 animate();
 
-gsap.registerPlugin(ScrollTrigger);
-ScrollTrigger.refresh();
+
+
 
 // HERO TEXT REVEAL
 gsap.from(".hero-content h1", {
@@ -211,14 +211,10 @@ gsap.to(".hero-content", {
   ease: "power1.inOut"
 });
 
-const glow = document.querySelector(".cursor-glow");
 
-window.addEventListener("mousemove", (e) => {
-  glow.style.left = e.clientX + "px";
-  glow.style.top = e.clientY + "px";
-});
 
 gsap.registerPlugin(ScrollTrigger);
+ScrollTrigger.refresh();
 
 /* HERO */
 
