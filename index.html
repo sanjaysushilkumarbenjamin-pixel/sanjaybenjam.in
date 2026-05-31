@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Sanjay Benjamin - Africa's leading AI Transformation Advisor. 35+ years enterprise experience. Helping African C-suite and governments build board-ready AI strategies in 90 days.">
+<meta name="description" content="Sanjay Benjamin — Africa's leading AI Transformation Advisor. 35+ years enterprise experience. Helping African C-suite and governments build board-ready AI strategies in 90 days.">
 <meta property="og:title" content="Sanjay Benjamin | Africa AI Transformation Advisor">
 <meta property="og:description" content="Africa's AI transformation is not about copying Silicon Valley. It is about leapfrogging. Book your free AI Strategy Discovery Call.">
 <meta property="og:url" content="https://www.sanjaybenjam.in">
@@ -11,6 +11,8 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400;1,600&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+<link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+<script src="https://assets.calendly.com/assets/external/widget.js" async></script>
 <style>
 :root {
   --dark:    #04342C;
@@ -198,6 +200,15 @@ section{padding:100px 40px}
 .cta-row{display:flex;gap:16px;justify-content:center;flex-wrap:wrap}
 .cta-note{margin-top:20px;font-size:12px;color:var(--muted)}
 
+/* ── SECTOR STRIP ── */
+.sector-strip{margin-top:48px;padding-top:40px;border-top:1px solid var(--border)}
+.sector-strip-label{font-size:11px;letter-spacing:.14em;color:var(--muted);text-transform:uppercase;text-align:center;margin-bottom:20px;font-weight:500}
+.sector-pills{display:flex;flex-wrap:wrap;gap:10px;justify-content:center}
+.sector-pill{display:flex;align-items:center;gap:8px;padding:10px 18px;border:1px solid var(--border);border-radius:2px;font-size:13px;color:var(--muted);background:var(--off);transition:border-color .2s,color .2s}
+.sector-pill:hover{border-color:var(--accent);color:var(--dark)}
+/* ── CALENDLY ── */
+.calendly-wrap{margin-top:36px;border-radius:2px;overflow:hidden;background:var(--off)}
+.calendly-wrap iframe{display:block;border:none;width:100%;min-height:700px}
 /* ── FOOTER ── */
 footer{background:var(--dark);padding:60px 40px 40px;color:rgba(255,255,255,.4)}
 .footer-grid{display:grid;grid-template-columns:2fr 1fr 1fr;gap:60px;margin-bottom:48px}
@@ -211,27 +222,65 @@ footer{background:var(--dark);padding:60px 40px 40px;color:rgba(255,255,255,.4)}
 .footer-bottom p{font-size:12px}
 .footer-bottom a{color:var(--accent);text-decoration:none;font-size:12px}
 
+/* ── HAMBURGER BUTTON ── */
+.nav-hamburger{display:none;flex-direction:column;justify-content:center;align-items:center;gap:5px;width:40px;height:40px;cursor:pointer;border:none;background:transparent;padding:4px;border-radius:2px;z-index:200;flex-shrink:0}
+.nav-hamburger span{display:block;width:22px;height:2px;background:#fff;border-radius:2px;transition:transform .3s ease,opacity .3s ease,width .3s ease}
+.nav-hamburger.open span:nth-child(1){transform:translateY(7px) rotate(45deg)}
+.nav-hamburger.open span:nth-child(2){opacity:0;width:0}
+.nav-hamburger.open span:nth-child(3){transform:translateY(-7px) rotate(-45deg)}
+
+/* ── MOBILE MENU OVERLAY ── */
+.mobile-menu{display:none;position:fixed;top:0;left:0;right:0;bottom:0;z-index:150;background:rgba(4,52,44,.98);backdrop-filter:blur(12px);flex-direction:column;justify-content:center;align-items:center;gap:0;padding:80px 40px 40px;transform:translateX(100%);transition:transform .35s cubic-bezier(.4,0,.2,1)}
+.mobile-menu.open{transform:translateX(0)}
+.mobile-menu-links{display:flex;flex-direction:column;align-items:center;gap:0;width:100%;max-width:320px}
+.mobile-menu-links a{display:block;width:100%;text-align:center;padding:18px 24px;color:rgba(255,255,255,.8);font-size:17px;font-weight:400;text-decoration:none;letter-spacing:.04em;border-bottom:0.5px solid rgba(29,158,117,.15);transition:color .2s,background .2s}
+.mobile-menu-links a:last-child{border-bottom:none}
+.mobile-menu-links a:hover{color:#fff;background:rgba(29,158,117,.1)}
+.mobile-menu-cta{display:block;width:100%;max-width:320px;margin-top:28px;text-align:center;padding:17px 24px;background:var(--accent);color:#fff;font-size:15px;font-weight:500;text-decoration:none;border-radius:2px;letter-spacing:.04em;transition:background .2s}
+.mobile-menu-cta:hover{background:var(--mid)}
+.mobile-menu-footer{margin-top:36px;text-align:center}
+.mobile-menu-footer p{font-size:12px;color:rgba(255,255,255,.35);letter-spacing:.06em}
+.mobile-menu-footer a{color:var(--accent);text-decoration:none;font-size:12px}
+
 /* ── RESPONSIVE ── */
 @media(max-width:900px){
-  nav{padding:16px 24px}
+  nav{padding:14px 20px}
   .nav-links{display:none}
-  section{padding:72px 24px}
-  .hero{padding:100px 24px 64px}
+  .nav-hamburger{display:flex}
+  .mobile-menu{display:flex}
+  section{padding:72px 20px}
+  .hero{padding:96px 20px 64px}
+  .hero h1{font-size:clamp(36px,10vw,56px)}
+  .hero-sub{font-size:15px}
+  .hero-stats{gap:24px;flex-wrap:wrap}
+  .stat-num{font-size:32px}
+  .hero-badge{display:none}
   .about-grid,.transform-grid,.footer-grid{grid-template-columns:1fr}
+  .about-img-accent,.about-img-tag{display:none}
+  .about-img-wrap img{max-height:340px;object-fit:cover;object-position:top}
   .pov-cards,.offers-grid,.validation-grid{grid-template-columns:1fr}
   .process-steps{grid-template-columns:1fr 1fr}
   .process-steps::before{display:none}
   .principles-grid{grid-template-columns:1fr}
-  .hero-stats{gap:32px}
-  .hero-badge{display:none}
-  .about-img-accent,.about-img-tag{display:none}
+  .section-title{font-size:clamp(28px,7vw,44px)}
+  .quote-band{padding:48px 20px}
+  .scorecard-section{padding:64px 20px}
+  .cta-section{padding:80px 20px}
+  .opt-in-row{grid-template-columns:1fr}
+  .transform-arrow{transform:rotate(90deg);padding:8px 0}
+  .footer-grid{grid-template-columns:1fr;gap:32px}
+  .footer-bottom{flex-direction:column;gap:8px;text-align:center}
+  .calendly-wrap iframe{min-height:900px}
+  .sector-pills{gap:8px}
+  .sector-pill{font-size:12px;padding:8px 14px}
+  body.menu-open{overflow:hidden}
 }
 </style>
 </head>
 <body>
 
 <!-- NAV -->
-<nav>
+<nav id="mainNav">
   <a href="/" class="nav-logo">Sanjay <span>Benjamin</span></a>
   <div class="nav-links">
     <a href="#about">About</a>
@@ -240,7 +289,28 @@ footer{background:var(--dark);padding:60px 40px 40px;color:rgba(255,255,255,.4)}
     <a href="#scorecard">Free Scorecard</a>
     <a href="#contact" class="nav-cta">Book Discovery Call</a>
   </div>
+  <button class="nav-hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false">
+    <span></span>
+    <span></span>
+    <span></span>
+  </button>
 </nav>
+
+<!-- MOBILE MENU -->
+<div class="mobile-menu" id="mobileMenu" aria-hidden="true">
+  <div class="mobile-menu-links">
+    <a href="#about" class="mobile-link">About</a>
+    <a href="#offers" class="mobile-link">Services</a>
+    <a href="#process" class="mobile-link">How It Works</a>
+    <a href="#scorecard" class="mobile-link">Free Scorecard</a>
+    <a href="#validation" class="mobile-link">Social Proof</a>
+  </div>
+  <a href="#contact" class="mobile-menu-cta mobile-link">Book Discovery Call</a>
+  <div class="mobile-menu-footer">
+    <p>sanjaybenjam.in</p>
+    <a href="https://www.linkedin.com/in/sanjaybenjamin/" target="_blank">LinkedIn</a>
+  </div>
+</div>
 
 <!-- HERO -->
 <section class="hero">
@@ -261,7 +331,7 @@ footer{background:var(--dark);padding:60px 40px 40px;color:rgba(255,255,255,.4)}
       <em>It will be created.</em>
     </h1>
     <p class="hero-sub">
-      I help African C-suite leaders and governments build board-ready AI strategies -
+      I help African C-suite leaders and governments build board-ready AI strategies —
       grounded in African market realities, not Silicon Valley templates.
       First measurable results within 90 days.
     </p>
@@ -303,7 +373,7 @@ footer{background:var(--dark);padding:60px 40px 40px;color:rgba(255,255,255,.4)}
     It is about <strong>leapfrogging</strong>. African executives who build
     AI capability now will define the next decade of business on the continent."
   </blockquote>
-  <cite>- Sanjay Benjamin</cite>
+  <cite>— Sanjay Benjamin</cite>
 </div>
 
 <!-- ABOUT -->
@@ -311,7 +381,7 @@ footer{background:var(--dark);padding:60px 40px 40px;color:rgba(255,255,255,.4)}
   <div class="container">
     <div class="about-grid">
       <div class="about-img-wrap">
-        <img src="sb.jpg" alt="Sanjay Benjamin - Africa AI Transformation Advisor">
+        <img src="sb.jpg" alt="Sanjay Benjamin — Africa AI Transformation Advisor">
         <div class="about-img-accent"></div>
         <div class="about-img-tag">
           <span>Doctorate (DBA) · MBA</span>
@@ -321,12 +391,12 @@ footer{background:var(--dark);padding:60px 40px 40px;color:rgba(255,255,255,.4)}
       <div class="about-content">
         <p class="section-label">About Sanjay</p>
         <h2 class="section-title" style="font-size:clamp(28px,3.5vw,44px)">The only advisor who has actually built businesses in Africa</h2>
-        <p>For over 35 years I have worked across enterprise technology, digital transformation, cybersecurity, cloud, and data - helping governments, banks, utilities, and enterprises across Africa and the Middle East modernise their technology environments.</p>
+        <p>For over 35 years I have worked across enterprise technology, digital transformation, cybersecurity, cloud, and data — helping governments, banks, utilities, and enterprises across Africa and the Middle East modernise their technology environments.</p>
         <p>I am not a Western consultant who arrived with a generic framework. I am an <strong>African operator</strong> who has built and run real businesses on this continent, understands the infrastructure constraints, the talent gaps, the regulatory context, and the capital dynamics that shape every AI decision.</p>
-        <p>I now channel that experience into one mission: helping African organisations leapfrog - not follow - the global AI wave.</p>
+        <p>I now channel that experience into one mission: helping African organisations leapfrog — not follow — the global AI wave.</p>
         <ul class="cred-list">
-          <li>Founder - AI Sovereignty Network (sovereign AI strategies for African governments)</li>
-          <li>Founder & Director - KRCiiS & Dubs Studio</li>
+          <li>Founder — AI Sovereignty Network (sovereign AI strategies for African governments)</li>
+          <li>Founder & Director — KRCiiS & Dubs Studio</li>
           <li>IBM enterprise client experience across Africa and the Middle East</li>
           <li>Author of AI and Digital Transformation publications</li>
           <li>Doctorate (DBA) · MBA · 35+ years in enterprise technology</li>
@@ -357,7 +427,7 @@ footer{background:var(--dark);padding:60px 40px 40px;color:rgba(255,255,255,.4)}
       <div class="pov-card">
         <div class="pov-num">03</div>
         <h3>Quick wins build the mandate for scale</h3>
-        <p>Boards approve budgets when they see results. Every engagement starts with identifying 2–3 quick-win AI pilots that can show measurable ROI within 90 days - creating internal momentum for the bigger transformation.</p>
+        <p>Boards approve budgets when they see results. Every engagement starts with identifying 2–3 quick-win AI pilots that can show measurable ROI within 90 days — creating internal momentum for the bigger transformation.</p>
       </div>
     </div>
   </div>
@@ -368,7 +438,7 @@ footer{background:var(--dark);padding:60px 40px 40px;color:rgba(255,255,255,.4)}
   <div class="container">
     <p class="section-label">Advisory Services</p>
     <h2 class="section-title">Three ways to work<br>with Sanjay</h2>
-    <p class="section-sub">From a free assessment to a 6-month embedded partnership - choose the level of engagement that fits your organisation's stage and ambition.</p>
+    <p class="section-sub">From a free assessment to a 6-month embedded partnership — choose the level of engagement that fits your organisation's stage and ambition.</p>
 
     <div class="offers-grid">
       <!-- Entry -->
@@ -437,7 +507,7 @@ footer{background:var(--dark);padding:60px 40px 40px;color:rgba(255,255,255,.4)}
         <div class="transform-label">Before</div>
         <h3>Where your organisation is today</h3>
         <ul class="transform-items">
-          <li>Board pressure to act on AI - no clear roadmap</li>
+          <li>Board pressure to act on AI — no clear roadmap</li>
           <li>No trusted advisor who understands African context</li>
           <li>Fear of choosing the wrong tools and wasting budget</li>
           <li>Watching competitors move and feeling left behind</li>
@@ -501,7 +571,7 @@ footer{background:var(--dark);padding:60px 40px 40px;color:rgba(255,255,255,.4)}
   <div class="container">
     <p class="section-label">Free Assessment</p>
     <h2 class="section-title">Where does your organisation<br>stand on AI readiness?</h2>
-    <p class="section-sub">Take the Africa AI Readiness Scorecard - a free 5-dimension benchmark built specifically for African organisations. Takes 10 minutes. Receive your personalised report instantly.</p>
+    <p class="section-sub">Take the Africa AI Readiness Scorecard — a free 5-dimension benchmark built specifically for African organisations. Takes 10 minutes. Receive your personalised report instantly.</p>
     <div class="scorecard-chips">
       <span class="chip"><strong>Dimension 1:</strong> Leadership & Strategy</span>
       <span class="chip"><strong>Dimension 2:</strong> Data & Infrastructure</span>
@@ -519,7 +589,7 @@ footer{background:var(--dark);padding:60px 40px 40px;color:rgba(255,255,255,.4)}
         <input type="email" name="email" placeholder="Your email address" required autocomplete="email">
         <button type="submit" class="btn-primary" id="submitBtn">Get Free Scorecard</button>
       </div>
-      <p class="opt-in-note">Your scorecard will download immediately. No spam - ever. Unsubscribe any time.</p>
+      <p class="opt-in-note">Your scorecard will download immediately. No spam — ever. Unsubscribe any time.</p>
       <div class="opt-in-success" id="successMsg">
         <span class="success-icon">&#10003;</span>
         <strong>Thank you! Your scorecard is downloading now.</strong>
@@ -535,7 +605,7 @@ footer{background:var(--dark);padding:60px 40px 40px;color:rgba(255,255,255,.4)}
   <div class="container">
     <p class="section-label">Validation</p>
     <h2 class="section-title">Real work. Real results.</h2>
-    <p class="section-sub">Every box below is ticked - not aspirational.</p>
+    <p class="section-sub">Every box below is ticked — not aspirational.</p>
     <div class="validation-grid">
       <div class="val-card">
         <div class="val-check">✓</div>
@@ -555,7 +625,46 @@ footer{background:var(--dark);padding:60px 40px 40px;color:rgba(255,255,255,.4)}
       </div>
     </div>
     <div style="margin-top:32px;background:var(--pale);padding:28px 32px;border-radius:2px;border-left:3px solid var(--accent)">
-      <p style="font-size:14px;color:var(--muted);line-height:1.7"><strong style="color:var(--dark)">What African executives keep saying:</strong> "There is no one else doing this for Africa at this depth and credibility." · "The board pressure to act on AI is real and we needed someone who understands our context." · "We needed quick wins to maintain momentum - Sanjay delivered."</p>
+      <p style="font-size:14px;color:var(--muted);line-height:1.7"><strong style="color:var(--dark)">What African executives keep saying:</strong> "There is no one else doing this for Africa at this depth and credibility." · "The board pressure to act on AI is real and we needed someone who understands our context." · "We needed quick wins to maintain momentum — Sanjay delivered."</p>
+    </div>
+
+    <!-- SECTOR STRIP -->
+    <div class="sector-strip">
+      <p class="sector-strip-label">Serving organisations across these sectors</p>
+      <div class="sector-pills">
+        <div class="sector-pill">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 21V9"/></svg>
+          Government & Public Sector
+        </div>
+        <div class="sector-pill">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+          Financial Services & Banking
+        </div>
+        <div class="sector-pill">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81a19.79 19.79 0 01-3.07-8.7A2 2 0 012 1h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.91 8.91a16 16 0 006.18 6.18l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+          Telecoms & Technology
+        </div>
+        <div class="sector-pill">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
+          Energy & Utilities
+        </div>
+        <div class="sector-pill">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 01-8 0"/></svg>
+          FMCG & Retail
+        </div>
+        <div class="sector-pill">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg>
+          Manufacturing & Industry
+        </div>
+        <div class="sector-pill">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 10v6M2 10l10-7 10 7"/><path d="M6 10v8a2 2 0 002 2h8a2 2 0 002-2v-8"/></svg>
+          Higher Education & Research
+        </div>
+        <div class="sector-pill">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+          Real Estate & Construction
+        </div>
+      </div>
     </div>
   </div>
 </section>
@@ -568,11 +677,11 @@ footer{background:var(--dark);padding:60px 40px 40px;color:rgba(255,255,255,.4)}
     <div class="principles-grid">
       <div class="principle">
         <div class="principle-num">Principle 01</div>
-        <p><strong>Africa first.</strong> Every framework and example is grounded in African market realities - not imported Silicon Valley assumptions.</p>
+        <p><strong>Africa first.</strong> Every framework and example is grounded in African market realities — not imported Silicon Valley assumptions.</p>
       </div>
       <div class="principle">
         <div class="principle-num">Principle 02</div>
-        <p><strong>Sell transformation, not time.</strong> Priced and positioned by outcome delivered - not hours worked or sessions attended.</p>
+        <p><strong>Sell transformation, not time.</strong> Priced and positioned by outcome delivered — not hours worked or sessions attended.</p>
       </div>
       <div class="principle">
         <div class="principle-num">Principle 03</div>
@@ -588,7 +697,7 @@ footer{background:var(--dark);padding:60px 40px 40px;color:rgba(255,255,255,.4)}
       </div>
       <div class="principle">
         <div class="principle-num">Principle 06</div>
-        <p><strong>Systems before scale.</strong> The goal is a business that runs - not just a consultant who hustles.</p>
+        <p><strong>Systems before scale.</strong> The goal is a business that runs — not just a consultant who hustles.</p>
       </div>
     </div>
   </div>
@@ -600,11 +709,18 @@ footer{background:var(--dark);padding:60px 40px 40px;color:rgba(255,255,255,.4)}
     <p class="section-label" style="justify-content:center;display:flex">Book a Discovery Call</p>
     <h2 class="section-title">Ready to build your<br>AI strategy for Africa?</h2>
     <p class="section-sub">Start with a free 30-minute AI Strategy Discovery Call. We will review your scorecard, identify your biggest AI opportunity, and map your 90-day roadmap.</p>
-    <div class="cta-row">
-      <a href="https://www.linkedin.com/in/sanjaybenjamin/" target="_blank" class="btn-primary">Connect on LinkedIn</a>
-      <a href="#scorecard" class="btn-ghost" style="color:var(--dark);border-color:var(--border)">Take Free Scorecard First</a>
+
+    <!-- Calendly inline embed -->
+    <div class="calendly-wrap">
+      <iframe
+        src="https://calendly.com/sanjaysbenjamin/30min?hide_gdpr_banner=1&background_color=f7fffe&text_color=1a1a1a&primary_color=1d9e75"
+        title="Book a 30-minute AI Strategy Discovery Call with Sanjay Benjamin"
+        loading="lazy"
+        allow="payment">
+      </iframe>
     </div>
-    <p class="cta-note">AI Strategy Sprint cohorts capped at 8 seats · Early-bird pricing for first 3 registrations each quarter</p>
+
+    <p class="cta-note" style="margin-top:20px">Can't find a suitable time? <a href="https://www.linkedin.com/in/sanjaybenjamin/" target="_blank" style="color:var(--accent);text-decoration:none;font-weight:500">Message Sanjay on LinkedIn</a> · AI Strategy Sprint cohorts capped at 8 seats</p>
   </div>
 </section>
 
@@ -638,6 +754,53 @@ footer{background:var(--dark);padding:60px 40px 40px;color:rgba(255,255,255,.4)}
     </div>
   </div>
 </footer>
+
+<script>
+// ── Mobile Menu ────────────────────────────────────────────
+const hamburger = document.getElementById('hamburger');
+const mobileMenu = document.getElementById('mobileMenu');
+const mobileLinks = document.querySelectorAll('.mobile-link');
+
+function openMenu() {
+  hamburger.classList.add('open');
+  mobileMenu.classList.add('open');
+  mobileMenu.setAttribute('aria-hidden', 'false');
+  hamburger.setAttribute('aria-expanded', 'true');
+  document.body.classList.add('menu-open');
+}
+
+function closeMenu() {
+  hamburger.classList.remove('open');
+  mobileMenu.classList.remove('open');
+  mobileMenu.setAttribute('aria-hidden', 'true');
+  hamburger.setAttribute('aria-expanded', 'false');
+  document.body.classList.remove('menu-open');
+}
+
+hamburger.addEventListener('click', function() {
+  if (mobileMenu.classList.contains('open')) {
+    closeMenu();
+  } else {
+    openMenu();
+  }
+});
+
+mobileLinks.forEach(function(link) {
+  link.addEventListener('click', closeMenu);
+});
+
+// Close on escape key
+document.addEventListener('keydown', function(e) {
+  if (e.key === 'Escape' && mobileMenu.classList.contains('open')) {
+    closeMenu();
+  }
+});
+
+// Close on outside click
+mobileMenu.addEventListener('click', function(e) {
+  if (e.target === mobileMenu) closeMenu();
+});
+</script>
 
 <script>
 const form = document.getElementById('scorecardForm');
