@@ -578,5 +578,16 @@
   <p style="font-size:12px;color:var(--grey)">Afro-Cinematic Motivation &nbsp;·&nbsp; Kampala, Uganda</p>
 </footer>
 
+<script>
+  // Pause all other audio players when a new one starts
+  document.addEventListener('play', function(e) {
+    const allAudio = document.querySelectorAll('audio');
+    allAudio.forEach(function(audio) {
+      if (audio !== e.target) {
+        audio.pause();
+      }
+    });
+  }, true);
+</script>
 </body>
 </html>
