@@ -44,6 +44,19 @@ window.GALLERY_PHOTOS = [
     "alt": "Sanjay Benjamin adjusting his tie in a navy double-breasted suit"
   },
   {
+    "id": "sanjay-benjamin-portraits-studio-headshot-video",
+    "source": "video",
+    "category": "portraits",
+    "full": "images/gallery/full/sanjay-benjamin-portraits-studio-headshot-video.webp",
+    "thumb": "images/gallery/thumbs/sanjay-benjamin-portraits-studio-headshot-video.webp",
+    "video": "images/gallery/video/sanjay-benjamin-portraits-studio-headshot-video.mp4",
+    "width": 1280,
+    "height": 720,
+    "title": "In Motion",
+    "caption": "",
+    "alt": "Short studio video of Sanjay Benjamin in a dark suit and blue tie"
+  },
+  {
     "id": "sanjay-benjamin-portraits-04-black-and-white-headshot",
     "source": "portraits/04-black-and-white-headshot.jpg",
     "category": "portraits",
@@ -246,6 +259,54 @@ window.GALLERY_PHOTOS = [
     "title": "Three-Piece",
     "caption": "",
     "alt": "Sanjay Benjamin in a black three-piece suit, hands in pockets, looking away"
+  },
+  {
+    "id": "sanjay-benjamin-portraits-21-orange-blazer-turtleneck",
+    "source": "portraits/21-orange-blazer-turtleneck.png",
+    "category": "portraits",
+    "full": "images/gallery/full/sanjay-benjamin-portraits-21-orange-blazer-turtleneck.webp",
+    "thumb": "images/gallery/thumbs/sanjay-benjamin-portraits-21-orange-blazer-turtleneck.webp",
+    "width": 1122,
+    "height": 1402,
+    "title": "Burnt Orange",
+    "caption": "",
+    "alt": "Smiling Sanjay Benjamin in a burnt orange blazer, white turtleneck and tinted glasses"
+  },
+  {
+    "id": "sanjay-benjamin-portraits-22-grey-three-piece",
+    "source": "portraits/22-grey-three-piece.jpg",
+    "category": "portraits",
+    "full": "images/gallery/full/sanjay-benjamin-portraits-22-grey-three-piece.webp",
+    "thumb": "images/gallery/thumbs/sanjay-benjamin-portraits-22-grey-three-piece.webp",
+    "width": 768,
+    "height": 1376,
+    "title": "Grey Three-Piece",
+    "caption": "",
+    "alt": "Sanjay Benjamin in a grey three-piece suit and navy tie, studio portrait"
+  },
+  {
+    "id": "sanjay-benjamin-portraits-23-corporate-headshot-smile",
+    "source": "portraits/23-corporate-headshot-smile.jpg",
+    "category": "portraits",
+    "full": "images/gallery/full/sanjay-benjamin-portraits-23-corporate-headshot-smile.webp",
+    "thumb": "images/gallery/thumbs/sanjay-benjamin-portraits-23-corporate-headshot-smile.webp",
+    "width": 768,
+    "height": 1376,
+    "title": "Corporate Headshot",
+    "caption": "",
+    "alt": "Smiling corporate headshot of Sanjay Benjamin in a dark suit and navy tie"
+  },
+  {
+    "id": "sanjay-benjamin-portraits-24-black-tee-smile",
+    "source": "portraits/24-black-tee-smile.jpg",
+    "category": "portraits",
+    "full": "images/gallery/full/sanjay-benjamin-portraits-24-black-tee-smile.webp",
+    "thumb": "images/gallery/thumbs/sanjay-benjamin-portraits-24-black-tee-smile.webp",
+    "width": 900,
+    "height": 1600,
+    "title": "Relaxed",
+    "caption": "",
+    "alt": "Smiling Sanjay Benjamin in a black t-shirt with arms crossed"
   },
   {
     "id": "sanjay-benjamin-lifestyle-01-city-skyline-rooftop",
@@ -618,5 +679,65 @@ window.GALLERY_PHOTOS = [
     "title": "Red Splash",
     "caption": "",
     "alt": "Comic-style illustration of Sanjay Benjamin against a red paint splash"
+  },
+  {
+    "id": "sanjay-benjamin-creative-11-half-face-ink",
+    "source": "creative/11-half-face-ink.jpg",
+    "category": "creative",
+    "full": "images/gallery/full/sanjay-benjamin-creative-11-half-face-ink.webp",
+    "thumb": "images/gallery/thumbs/sanjay-benjamin-creative-11-half-face-ink.webp",
+    "width": 768,
+    "height": 1376,
+    "title": "Half Face",
+    "caption": "",
+    "alt": "Black and white ink illustration showing half of Sanjay Benjamin's face"
+  },
+  {
+    "id": "sanjay-benjamin-creative-12-red-lens-leather",
+    "source": "creative/12-red-lens-leather.jpg",
+    "category": "creative",
+    "full": "images/gallery/full/sanjay-benjamin-creative-12-red-lens-leather.webp",
+    "thumb": "images/gallery/thumbs/sanjay-benjamin-creative-12-red-lens-leather.webp",
+    "width": 768,
+    "height": 1376,
+    "title": "Red Lens",
+    "caption": "",
+    "alt": "Black and white portrait of Sanjay Benjamin in a leather jacket with red-tinted glasses"
+  },
+  {
+    "id": "sanjay-benjamin-creative-13-amber-aviators",
+    "source": "creative/13-amber-aviators.jpg",
+    "category": "creative",
+    "full": "images/gallery/full/sanjay-benjamin-creative-13-amber-aviators.webp",
+    "thumb": "images/gallery/thumbs/sanjay-benjamin-creative-13-amber-aviators.webp",
+    "width": 768,
+    "height": 1376,
+    "title": "Amber Aviators",
+    "caption": "",
+    "alt": "Black and white portrait of Sanjay Benjamin with amber aviator glasses"
+  },
+  {
+    "id": "sanjay-benjamin-creative-14-mini-me-studio",
+    "source": "creative/14-mini-me-studio.png",
+    "category": "creative",
+    "full": "images/gallery/full/sanjay-benjamin-creative-14-mini-me-studio.webp",
+    "thumb": "images/gallery/thumbs/sanjay-benjamin-creative-14-mini-me-studio.webp",
+    "width": 1122,
+    "height": 1402,
+    "title": "Mini Me, Studio",
+    "caption": "",
+    "alt": "Sanjay Benjamin standing beside a cartoon mini version of himself"
+  },
+  {
+    "id": "sanjay-benjamin-creative-15-stand-out",
+    "source": "creative/15-stand-out.jpg",
+    "category": "creative",
+    "full": "images/gallery/full/sanjay-benjamin-creative-15-stand-out.webp",
+    "thumb": "images/gallery/thumbs/sanjay-benjamin-creative-15-stand-out.webp",
+    "width": 768,
+    "height": 1376,
+    "title": "Stand Out",
+    "caption": "",
+    "alt": "Sanjay Benjamin in an orange suit and hat standing out in a crowd of black hats"
   }
 ];

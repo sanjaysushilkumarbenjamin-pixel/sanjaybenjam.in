@@ -120,6 +120,9 @@
   }
   .lb-btn:hover { border-color: var(--gold); color: var(--gold); }
   .lb-stage { flex: 1; display: flex; align-items: center; justify-content: center; position: relative; min-height: 0; padding: 0 72px; touch-action: pan-y; }
+  .lb-stage video { max-width: 100%; max-height: 100%; background: #000; }
+  .play-badge { position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%); width: 56px; height: 56px; border-radius: 50%; background: rgba(13,13,13,0.7); border: 1px solid var(--gold); display: flex; align-items: center; justify-content: center; pointer-events: none; }
+  .play-badge::after { content: ""; margin-left: 4px; border-style: solid; border-width: 10px 0 10px 16px; border-color: transparent transparent transparent var(--gold); }
   .lb-stage img { max-width: 100%; max-height: 100%; object-fit: contain; user-select: none; -webkit-user-drag: none; transition: opacity 0.25s; }
   .lb-prev, .lb-next { position: absolute; top: 50%; transform: translateY(-50%); }
   .lb-prev { left: 16px; } .lb-next { right: 16px; }
@@ -213,6 +216,7 @@
   <div class="lb-stage" id="lbStage">
     <button class="lb-btn lb-prev" id="lbPrev" aria-label="Previous photo">‹</button>
     <img id="lbImg" alt="">
+    <video id="lbVid" controls playsinline preload="metadata" hidden></video>
     <button class="lb-btn lb-next" id="lbNext" aria-label="Next photo">›</button>
   </div>
   <div class="lb-caption">
@@ -270,6 +274,7 @@
       var label = p.title ? '<span class="tile-title">' + esc(p.title) + '</span>' : '';
       return '<button class="tile' + (p.title ? ' has-title' : '') + '" data-i="' + i + '" style="animation-delay:' + Math.min(i, 12) * 0.03 + 's" aria-label="Open: ' + esc(altText(p)) + '">' +
         '<img src="' + esc(p.thumb) + '" width="' + (p.width || '') + '" height="' + (p.height || '') + '" alt="' + esc(altText(p)) + '" loading="' + (i < 6 ? 'eager' : 'lazy') + '" decoding="async">' +
+        (p.video ? '<span class="play-badge" aria-hidden="true"></span>' : '') +
         '<span class="tile-cap"><span class="tile-cat">' + esc(cats[p.category] || '') + '</span>' + label + '</span>' +
         '</button>';
     }).join('');
@@ -282,23 +287,34 @@
   // Lightbox
   var lb = document.getElementById('lightbox');
   var lbImg = document.getElementById('lbImg');
+  var lbVid = document.getElementById('lbVid');
+  function stopVideo() { lbVid.pause(); lbVid.removeAttribute('src'); lbVid.load(); lbVid.hidden = true; }
   var lastFocus = null;
 
   function show(i) {
     if (!visible.length) return;
     current = (i + visible.length) % visible.length;
     var p = visible[current];
-    lbImg.style.opacity = 0;
-    lbImg.onload = function () { lbImg.style.opacity = 1; };
-    lbImg.src = p.full;
-    lbImg.alt = altText(p);
+    stopVideo();
+    if (p.video) {
+      lbImg.hidden = true; lbImg.removeAttribute('src');
+      lbVid.hidden = false; lbVid.poster = p.full; lbVid.src = p.video;
+      lbVid.setAttribute('aria-label', altText(p));
+      var pr = lbVid.play(); if (pr && pr.catch) pr.catch(function () {});
+    } else {
+      lbImg.hidden = false;
+      lbImg.style.opacity = 0;
+      lbImg.onload = function () { lbImg.style.opacity = 1; };
+      lbImg.src = p.full;
+      lbImg.alt = altText(p);
+    }
     document.getElementById('lbCounter').textContent = (current + 1) + ' / ' + visible.length;
     document.getElementById('lbTitle').textContent = p.title || '';
     document.getElementById('lbText').textContent = p.caption || '';
     // Preload neighbours
     [1, -1].forEach(function (d) {
       var n = visible[(current + d + visible.length) % visible.length];
-      if (n) { var im = new Image(); im.src = n.full; }
+      if (n && !n.video) { var im = new Image(); im.src = n.full; }
     });
   }
   function open(i) {
@@ -312,6 +328,7 @@
     lb.classList.remove('open');
     document.body.classList.remove('lb-open');
     lbImg.removeAttribute('src');
+    stopVideo();
     if (lastFocus) lastFocus.focus();
   }
   document.getElementById('lbClose').onclick = close;
