@@ -62,6 +62,8 @@ CATEGORIES = {
     "media": "Media",
     "music": "Music & Studio",
     "portraits": "Portraits",
+    "lifestyle": "City & Lifestyle",
+    "creative": "Creative",
     "personal": "Personal",
 }
 
