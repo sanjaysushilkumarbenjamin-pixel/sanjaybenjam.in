@@ -67,6 +67,23 @@ nav{position:fixed;top:0;left:0;right:0;z-index:100;padding:18px 40px;display:fl
 .hero-badge p{font-size:11px;color:var(--accent);letter-spacing:.1em;text-transform:uppercase}
 .hero-badge strong{font-family:var(--serif);font-size:15px;color:#fff;display:block;margin-top:2px;font-style:italic}
 
+/* ── BOOK ── */
+.book-section{background:var(--amber-l)}
+.book-grid{display:grid;grid-template-columns:5fr 6fr;gap:64px;align-items:center}
+.book-img{position:relative}
+.book-img img{width:100%;height:auto;display:block;border-radius:2px;box-shadow:0 24px 60px rgba(4,52,44,.18)}
+.book-badge{position:absolute;top:20px;left:-16px;background:var(--amber);color:#fff;font-size:11px;letter-spacing:.16em;text-transform:uppercase;font-weight:500;padding:8px 14px;border-radius:2px}
+.book-section .section-label{color:var(--amber)}
+.book-sub{font-family:var(--serif);font-style:italic;font-size:22px;color:var(--mid);margin:-8px 0 24px}
+.book-text p{color:var(--muted);margin-bottom:16px}
+.book-points{list-style:none;margin:8px 0 32px;padding:0}
+.book-points li{padding:8px 0 8px 28px;position:relative;color:var(--text);border-bottom:1px solid rgba(186,117,23,.15)}
+.book-points li::before{content:"";position:absolute;left:0;top:18px;width:14px;height:1px;background:var(--amber)}
+.book-actions{display:flex;gap:16px;flex-wrap:wrap}
+.btn-amber-ghost{border:1px solid var(--amber);color:var(--amber);padding:14px 28px;border-radius:2px;text-decoration:none;font-weight:500;font-size:14px;letter-spacing:.03em;transition:background .2s,color .2s}
+.btn-amber-ghost:hover{background:var(--amber);color:#fff}
+@media(max-width:900px){.book-grid{grid-template-columns:1fr;gap:40px}.book-badge{left:12px}.book-img img{max-height:420px;object-fit:cover;object-position:center 40%}}
+
 @keyframes fadeUp{from{opacity:0;transform:translateY(20px)}to{opacity:1;transform:translateY(0)}}
 
 /* ── QUOTE BAND ── */
@@ -305,6 +322,7 @@ footer{background:var(--dark);padding:60px 40px 40px;color:rgba(255,255,255,.4)}
     <a href="#offers" class="mobile-link">Services</a>
     <a href="#process" class="mobile-link">How It Works</a>
     <a href="#scorecard" class="mobile-link">Free Scorecard</a>
+    <a href="#book" class="mobile-link">The Book</a>
     <a href="https://www.sanjaybenjam.in/music.html" class="mobile-link">Music</a>
     <a href="https://www.sanjaybenjam.in/gallery.html" class="mobile-link">Gallery</a>
     <a href="#validation" class="mobile-link">Social Proof</a>
@@ -432,6 +450,33 @@ footer{background:var(--dark);padding:60px 40px 40px;color:rgba(255,255,255,.4)}
         <div class="pov-num">03</div>
         <h3>Quick wins build the mandate for scale</h3>
         <p>Boards approve budgets when they see results. Every engagement starts with identifying 2–3 quick-win AI pilots that can show measurable ROI within 90 days creating internal momentum for the bigger transformation.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- BOOK -->
+<section class="book-section" id="book">
+  <div class="container">
+    <div class="book-grid">
+      <div class="book-img">
+        <img src="images/gallery/full/sanjay-benjamin-lifestyle-00-ai-or-be-owned-book.webp" alt="Sanjay Benjamin reading his book AI or Be Owned: A Handbook for Africa's AI Future" loading="lazy" width="1122" height="1402">
+        <span class="book-badge">Coming Soon</span>
+      </div>
+      <div class="book-text">
+        <p class="section-label">The Book</p>
+        <h2 class="section-title">AI or Be Owned</h2>
+        <p class="book-sub">A Handbook for Africa's AI Future</p>
+        <p>Africa will either build and own its AI capability, or rent it from someone else. This handbook sets out the choice facing every African leader, and how to make it deliberately.</p>
+        <ul class="book-points">
+          <li>Why AI sovereignty matters for African organisations and governments</li>
+          <li>How to leapfrog rather than copy Silicon Valley playbooks</li>
+          <li>Practical steps from first pilots to board-approved strategy</li>
+        </ul>
+        <div class="book-actions">
+          <a href="https://www.linkedin.com/in/sanjaybenjamin/" target="_blank" rel="noopener" class="btn-primary">Follow for Launch Updates</a>
+          <a href="#contact" class="btn-amber-ghost">Book a Discovery Call</a>
+        </div>
       </div>
     </div>
   </div>
@@ -751,6 +796,7 @@ footer{background:var(--dark);padding:60px 40px 40px;color:rgba(255,255,255,.4)}
         <a href="Africa_AI_Readiness_Scorecard_V2.pdf">Download Scorecard</a>
         <a href="https://www.sanjaybenjam.in/music.html">Music</a>
         <a href="https://www.sanjaybenjam.in/gallery.html">Gallery</a>
+        <a href="#book">The Book</a>
         <a href="#about">About Sanjay</a>
       </div>
     </div>

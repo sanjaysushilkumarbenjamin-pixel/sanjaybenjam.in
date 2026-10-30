@@ -832,7 +832,7 @@ window.GALLERY_PHOTOS = [
     "thumb": "images/gallery/thumbs/sanjay-benjamin-creative-18-red-light-look-back.webp",
     "width": 1086,
     "height": 1448,
-    "title": "Red Light",
+    "title": "Stage Light",
     "caption": "",
     "alt": "Sanjay Benjamin in sunglasses looking back over his shoulder in red stage light"
   },
