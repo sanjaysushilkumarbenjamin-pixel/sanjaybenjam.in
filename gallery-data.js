@@ -162,5 +162,29 @@ window.GALLERY_PHOTOS = [
     "title": "Red Room",
     "caption": "",
     "alt": "Sanjay Benjamin seated on a stool in front of a red backdrop"
+  },
+  {
+    "id": "sanjay-benjamin-creative-05-founder-portrait",
+    "source": "creative/05-founder-portrait.jpg",
+    "category": "creative",
+    "full": "images/gallery/full/sanjay-benjamin-creative-05-founder-portrait.webp",
+    "thumb": "images/gallery/thumbs/sanjay-benjamin-creative-05-founder-portrait.webp",
+    "width": 768,
+    "height": 1376,
+    "title": "Dr. Sanjay, Founder",
+    "caption": "",
+    "alt": "Black and white portrait of Dr. Sanjay Benjamin, Founder, under a spotlight"
+  },
+  {
+    "id": "sanjay-benjamin-creative-06-geometric-art-portrait",
+    "source": "creative/06-geometric-art-portrait.jpg",
+    "category": "creative",
+    "full": "images/gallery/full/sanjay-benjamin-creative-06-geometric-art-portrait.webp",
+    "thumb": "images/gallery/thumbs/sanjay-benjamin-creative-06-geometric-art-portrait.webp",
+    "width": 768,
+    "height": 1376,
+    "title": "Geometric Portrait",
+    "caption": "",
+    "alt": "Geometric red, black and white illustrated portrait of Sanjay Benjamin"
   }
 ];
