@@ -152,6 +152,30 @@ window.GALLERY_PHOTOS = [
     "alt": "Black and white portrait of Sanjay Benjamin seated in a white double-breasted suit"
   },
   {
+    "id": "sanjay-benjamin-portraits-13-taupe-suit-smile",
+    "source": "portraits/13-taupe-suit-smile.jpg",
+    "category": "portraits",
+    "full": "images/gallery/full/sanjay-benjamin-portraits-13-taupe-suit-smile.webp",
+    "thumb": "images/gallery/thumbs/sanjay-benjamin-portraits-13-taupe-suit-smile.webp",
+    "width": 768,
+    "height": 1376,
+    "title": "Taupe Suit",
+    "caption": "",
+    "alt": "Smiling studio portrait of Sanjay Benjamin in a taupe suit and black tie"
+  },
+  {
+    "id": "sanjay-benjamin-portraits-14-grey-suit-stool",
+    "source": "portraits/14-grey-suit-stool.jpg",
+    "category": "portraits",
+    "full": "images/gallery/full/sanjay-benjamin-portraits-14-grey-suit-stool.webp",
+    "thumb": "images/gallery/thumbs/sanjay-benjamin-portraits-14-grey-suit-stool.webp",
+    "width": 768,
+    "height": 1376,
+    "title": "The Thinker",
+    "caption": "",
+    "alt": "Sanjay Benjamin seated on a stool in a grey suit and burgundy tie, hand on chin"
+  },
+  {
     "id": "sanjay-benjamin-lifestyle-01-city-skyline-rooftop",
     "source": "lifestyle/01-city-skyline-rooftop.jpg",
     "category": "lifestyle",
@@ -318,6 +342,54 @@ window.GALLERY_PHOTOS = [
     "title": "In Flight",
     "caption": "",
     "alt": "Sanjay Benjamin smiling in a private jet cabin"
+  },
+  {
+    "id": "sanjay-benjamin-lifestyle-15-grey-double-breasted-townhouse",
+    "source": "lifestyle/15-grey-double-breasted-townhouse.jpg",
+    "category": "lifestyle",
+    "full": "images/gallery/full/sanjay-benjamin-lifestyle-15-grey-double-breasted-townhouse.webp",
+    "thumb": "images/gallery/thumbs/sanjay-benjamin-lifestyle-15-grey-double-breasted-townhouse.webp",
+    "width": 768,
+    "height": 1376,
+    "title": "Townhouse",
+    "caption": "",
+    "alt": "Sanjay Benjamin in a grey double-breasted suit and sunglasses outside a white townhouse"
+  },
+  {
+    "id": "sanjay-benjamin-lifestyle-16-city-plaza-black-suit",
+    "source": "lifestyle/16-city-plaza-black-suit.jpg",
+    "category": "lifestyle",
+    "full": "images/gallery/full/sanjay-benjamin-lifestyle-16-city-plaza-black-suit.webp",
+    "thumb": "images/gallery/thumbs/sanjay-benjamin-lifestyle-16-city-plaza-black-suit.webp",
+    "width": 768,
+    "height": 1376,
+    "title": "City Plaza",
+    "caption": "",
+    "alt": "Sanjay Benjamin in a black suit and sunglasses leaning on an SUV in a city plaza at golden hour"
+  },
+  {
+    "id": "sanjay-benjamin-lifestyle-17-mirror-reflection",
+    "source": "lifestyle/17-mirror-reflection.jpg",
+    "category": "lifestyle",
+    "full": "images/gallery/full/sanjay-benjamin-lifestyle-17-mirror-reflection.webp",
+    "thumb": "images/gallery/thumbs/sanjay-benjamin-lifestyle-17-mirror-reflection.webp",
+    "width": 768,
+    "height": 1376,
+    "title": "Reflection",
+    "caption": "",
+    "alt": "Sanjay Benjamin smiling at his reflection in a lit mirror"
+  },
+  {
+    "id": "sanjay-benjamin-lifestyle-18-night-terrace",
+    "source": "lifestyle/18-night-terrace.jpg",
+    "category": "lifestyle",
+    "full": "images/gallery/full/sanjay-benjamin-lifestyle-18-night-terrace.webp",
+    "thumb": "images/gallery/thumbs/sanjay-benjamin-lifestyle-18-night-terrace.webp",
+    "width": 768,
+    "height": 1376,
+    "title": "Night Terrace",
+    "caption": "",
+    "alt": "Smiling Sanjay Benjamin in a black shirt on a terrace overlooking city lights at night"
   },
   {
     "id": "sanjay-benjamin-creative-01-double-exposure-vision",
