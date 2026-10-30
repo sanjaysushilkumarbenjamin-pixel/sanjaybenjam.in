@@ -333,6 +333,30 @@ window.GALLERY_PHOTOS = [
     "alt": "Black and white portrait of a smiling Sanjay Benjamin in a crew-neck sweater"
   },
   {
+    "id": "sanjay-benjamin-portraits-27-dark-blazer-headshot",
+    "source": "portraits/27-dark-blazer-headshot.png",
+    "category": "portraits",
+    "full": "images/gallery/full/sanjay-benjamin-portraits-27-dark-blazer-headshot.webp",
+    "thumb": "images/gallery/thumbs/sanjay-benjamin-portraits-27-dark-blazer-headshot.webp",
+    "width": 1087,
+    "height": 1447,
+    "title": "Dark Blazer",
+    "caption": "",
+    "alt": "Studio headshot of Sanjay Benjamin in a dark blazer and black t-shirt"
+  },
+  {
+    "id": "sanjay-benjamin-portraits-28-black-turtleneck",
+    "source": "portraits/28-black-turtleneck.png",
+    "category": "portraits",
+    "full": "images/gallery/full/sanjay-benjamin-portraits-28-black-turtleneck.webp",
+    "thumb": "images/gallery/thumbs/sanjay-benjamin-portraits-28-black-turtleneck.webp",
+    "width": 1023,
+    "height": 1537,
+    "title": "Black Turtleneck",
+    "caption": "",
+    "alt": "Sanjay Benjamin in a black turtleneck and blazer against a dark background"
+  },
+  {
     "id": "sanjay-benjamin-lifestyle-00-ai-or-be-owned-book",
     "source": "lifestyle/00-ai-or-be-owned-book.png",
     "category": "lifestyle",
@@ -343,6 +367,30 @@ window.GALLERY_PHOTOS = [
     "title": "AI or Be Owned",
     "caption": "Reading AI or Be Owned: A Handbook for Africa's AI Future.",
     "alt": "Sanjay Benjamin reading his book AI or Be Owned: A Handbook for Africa's AI Future at a café"
+  },
+  {
+    "id": "sanjay-benjamin-lifestyle-00a-speaking-microphone",
+    "source": "lifestyle/00a-speaking-microphone.png",
+    "category": "lifestyle",
+    "full": "images/gallery/full/sanjay-benjamin-lifestyle-00a-speaking-microphone.webp",
+    "thumb": "images/gallery/thumbs/sanjay-benjamin-lifestyle-00a-speaking-microphone.webp",
+    "width": 1122,
+    "height": 1402,
+    "title": "On the Mic",
+    "caption": "",
+    "alt": "Sanjay Benjamin in a grey blazer speaking into a microphone"
+  },
+  {
+    "id": "sanjay-benjamin-lifestyle-00b-desk-grey-blazer",
+    "source": "lifestyle/00b-desk-grey-blazer.png",
+    "category": "lifestyle",
+    "full": "images/gallery/full/sanjay-benjamin-lifestyle-00b-desk-grey-blazer.webp",
+    "thumb": "images/gallery/thumbs/sanjay-benjamin-lifestyle-00b-desk-grey-blazer.webp",
+    "width": 1122,
+    "height": 1402,
+    "title": "At the Table",
+    "caption": "",
+    "alt": "Sanjay Benjamin in a grey blazer and black t-shirt seated at a table with a white mug"
   },
   {
     "id": "sanjay-benjamin-lifestyle-01-city-skyline-rooftop",
@@ -655,6 +703,18 @@ window.GALLERY_PHOTOS = [
     "title": "Rainy Night",
     "caption": "",
     "alt": "Sanjay Benjamin looking out of a rain-covered car window on a city street at night"
+  },
+  {
+    "id": "sanjay-benjamin-lifestyle-25-private-study",
+    "source": "lifestyle/25-private-study.png",
+    "category": "lifestyle",
+    "full": "images/gallery/full/sanjay-benjamin-lifestyle-25-private-study.webp",
+    "thumb": "images/gallery/thumbs/sanjay-benjamin-lifestyle-25-private-study.webp",
+    "width": 1122,
+    "height": 1402,
+    "title": "The Study",
+    "caption": "",
+    "alt": "Sanjay Benjamin in a dark suit seated in a black and gold study"
   },
   {
     "id": "sanjay-benjamin-creative-01-double-exposure-vision",
