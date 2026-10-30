@@ -68,6 +68,54 @@ window.GALLERY_PHOTOS = [
     "alt": "Sanjay Benjamin in a checked sweater vest leaning on a chair, studio portrait"
   },
   {
+    "id": "sanjay-benjamin-portraits-06-chesterfield-chair",
+    "source": "portraits/06-chesterfield-chair.jpg",
+    "category": "portraits",
+    "full": "images/gallery/full/sanjay-benjamin-portraits-06-chesterfield-chair.webp",
+    "thumb": "images/gallery/thumbs/sanjay-benjamin-portraits-06-chesterfield-chair.webp",
+    "width": 768,
+    "height": 1376,
+    "title": "The Chesterfield",
+    "caption": "",
+    "alt": "Sanjay Benjamin in a double-breasted black suit seated in a leather Chesterfield armchair"
+  },
+  {
+    "id": "sanjay-benjamin-portraits-07-black-and-white-pocket-square",
+    "source": "portraits/07-black-and-white-pocket-square.jpg",
+    "category": "portraits",
+    "full": "images/gallery/full/sanjay-benjamin-portraits-07-black-and-white-pocket-square.webp",
+    "thumb": "images/gallery/thumbs/sanjay-benjamin-portraits-07-black-and-white-pocket-square.webp",
+    "width": 768,
+    "height": 1376,
+    "title": "Monochrome",
+    "caption": "",
+    "alt": "Black and white portrait of Sanjay Benjamin in a blazer with pocket square"
+  },
+  {
+    "id": "sanjay-benjamin-portraits-08-grey-suit-studio",
+    "source": "portraits/08-grey-suit-studio.jpg",
+    "category": "portraits",
+    "full": "images/gallery/full/sanjay-benjamin-portraits-08-grey-suit-studio.webp",
+    "thumb": "images/gallery/thumbs/sanjay-benjamin-portraits-08-grey-suit-studio.webp",
+    "width": 768,
+    "height": 1376,
+    "title": "Grey Suit",
+    "caption": "",
+    "alt": "Full-length studio portrait of Sanjay Benjamin in a grey suit"
+  },
+  {
+    "id": "sanjay-benjamin-portraits-09-red-light-studio",
+    "source": "portraits/09-red-light-studio.jpg",
+    "category": "portraits",
+    "full": "images/gallery/full/sanjay-benjamin-portraits-09-red-light-studio.webp",
+    "thumb": "images/gallery/thumbs/sanjay-benjamin-portraits-09-red-light-studio.webp",
+    "width": 768,
+    "height": 1376,
+    "title": "Red Light",
+    "caption": "",
+    "alt": "Sanjay Benjamin in a black suit, hands in pockets, lit with red studio light"
+  },
+  {
     "id": "sanjay-benjamin-lifestyle-01-city-skyline-rooftop",
     "source": "lifestyle/01-city-skyline-rooftop.jpg",
     "category": "lifestyle",
@@ -114,6 +162,90 @@ window.GALLERY_PHOTOS = [
     "title": "Executive Interior",
     "caption": "",
     "alt": "Sanjay Benjamin in white shirt and black tie, jacket over his arm, in a wood-panelled room"
+  },
+  {
+    "id": "sanjay-benjamin-lifestyle-05-penthouse-skyline",
+    "source": "lifestyle/05-penthouse-skyline.jpg",
+    "category": "lifestyle",
+    "full": "images/gallery/full/sanjay-benjamin-lifestyle-05-penthouse-skyline.webp",
+    "thumb": "images/gallery/thumbs/sanjay-benjamin-lifestyle-05-penthouse-skyline.webp",
+    "width": 768,
+    "height": 1376,
+    "title": "Penthouse",
+    "caption": "",
+    "alt": "Sanjay Benjamin seated in a penthouse beneath a watercolour portrait, city towers at sunset behind"
+  },
+  {
+    "id": "sanjay-benjamin-lifestyle-06-corporate-office",
+    "source": "lifestyle/06-corporate-office.jpg",
+    "category": "lifestyle",
+    "full": "images/gallery/full/sanjay-benjamin-lifestyle-06-corporate-office.webp",
+    "thumb": "images/gallery/thumbs/sanjay-benjamin-lifestyle-06-corporate-office.webp",
+    "width": 768,
+    "height": 1376,
+    "title": "Corporate Floor",
+    "caption": "",
+    "alt": "Sanjay Benjamin in a double-breasted suit holding his glasses in a modern office"
+  },
+  {
+    "id": "sanjay-benjamin-lifestyle-07-financial-district-walk",
+    "source": "lifestyle/07-financial-district-walk.jpg",
+    "category": "lifestyle",
+    "full": "images/gallery/full/sanjay-benjamin-lifestyle-07-financial-district-walk.webp",
+    "thumb": "images/gallery/thumbs/sanjay-benjamin-lifestyle-07-financial-district-walk.webp",
+    "width": 768,
+    "height": 1376,
+    "title": "Financial District",
+    "caption": "",
+    "alt": "Sanjay Benjamin in a long black coat walking through a financial district"
+  },
+  {
+    "id": "sanjay-benjamin-lifestyle-08-blue-three-piece-suit",
+    "source": "lifestyle/08-blue-three-piece-suit.jpg",
+    "category": "lifestyle",
+    "full": "images/gallery/full/sanjay-benjamin-lifestyle-08-blue-three-piece-suit.webp",
+    "thumb": "images/gallery/thumbs/sanjay-benjamin-lifestyle-08-blue-three-piece-suit.webp",
+    "width": 768,
+    "height": 1376,
+    "title": "Royal Blue",
+    "caption": "",
+    "alt": "Sanjay Benjamin in a royal blue three-piece suit outside a classical building"
+  },
+  {
+    "id": "sanjay-benjamin-lifestyle-09-city-street-golden-light",
+    "source": "lifestyle/09-city-street-golden-light.jpg",
+    "category": "lifestyle",
+    "full": "images/gallery/full/sanjay-benjamin-lifestyle-09-city-street-golden-light.webp",
+    "thumb": "images/gallery/thumbs/sanjay-benjamin-lifestyle-09-city-street-golden-light.webp",
+    "width": 768,
+    "height": 1376,
+    "title": "Golden Light",
+    "caption": "",
+    "alt": "Sanjay Benjamin in a black suit on a city street in golden evening light"
+  },
+  {
+    "id": "sanjay-benjamin-lifestyle-10-modern-architecture-evening",
+    "source": "lifestyle/10-modern-architecture-evening.jpg",
+    "category": "lifestyle",
+    "full": "images/gallery/full/sanjay-benjamin-lifestyle-10-modern-architecture-evening.webp",
+    "thumb": "images/gallery/thumbs/sanjay-benjamin-lifestyle-10-modern-architecture-evening.webp",
+    "width": 768,
+    "height": 1376,
+    "title": "After Hours",
+    "caption": "",
+    "alt": "Sanjay Benjamin in a navy suit with a sports car outside modern architecture at dusk"
+  },
+  {
+    "id": "sanjay-benjamin-lifestyle-11-black-and-white-night",
+    "source": "lifestyle/11-black-and-white-night.jpg",
+    "category": "lifestyle",
+    "full": "images/gallery/full/sanjay-benjamin-lifestyle-11-black-and-white-night.webp",
+    "thumb": "images/gallery/thumbs/sanjay-benjamin-lifestyle-11-black-and-white-night.webp",
+    "width": 768,
+    "height": 1376,
+    "title": "Night Portrait",
+    "caption": "",
+    "alt": "Black and white night portrait of Sanjay Benjamin outside a grand illuminated building"
   },
   {
     "id": "sanjay-benjamin-creative-01-double-exposure-vision",
@@ -186,5 +318,29 @@ window.GALLERY_PHOTOS = [
     "title": "Geometric Portrait",
     "caption": "",
     "alt": "Geometric red, black and white illustrated portrait of Sanjay Benjamin"
+  },
+  {
+    "id": "sanjay-benjamin-creative-07-pencil-sketch",
+    "source": "creative/07-pencil-sketch.png",
+    "category": "creative",
+    "full": "images/gallery/full/sanjay-benjamin-creative-07-pencil-sketch.webp",
+    "thumb": "images/gallery/thumbs/sanjay-benjamin-creative-07-pencil-sketch.webp",
+    "width": 1122,
+    "height": 1402,
+    "title": "Pencil Sketch",
+    "caption": "",
+    "alt": "Pencil sketch portrait of a smiling Sanjay Benjamin in a sketchbook"
+  },
+  {
+    "id": "sanjay-benjamin-creative-08-mini-me",
+    "source": "creative/08-mini-me.jpg",
+    "category": "creative",
+    "full": "images/gallery/full/sanjay-benjamin-creative-08-mini-me.webp",
+    "thumb": "images/gallery/thumbs/sanjay-benjamin-creative-08-mini-me.webp",
+    "width": 768,
+    "height": 1376,
+    "title": "Mini Me",
+    "caption": "",
+    "alt": "Playful street photo of Sanjay Benjamin chasing a cartoon mini version of himself"
   }
 ];
