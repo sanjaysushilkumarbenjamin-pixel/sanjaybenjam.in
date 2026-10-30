@@ -116,6 +116,42 @@ window.GALLERY_PHOTOS = [
     "alt": "Sanjay Benjamin in a black suit, hands in pockets, lit with red studio light"
   },
   {
+    "id": "sanjay-benjamin-portraits-10-library-fireside",
+    "source": "portraits/10-library-fireside.jpg",
+    "category": "portraits",
+    "full": "images/gallery/full/sanjay-benjamin-portraits-10-library-fireside.webp",
+    "thumb": "images/gallery/thumbs/sanjay-benjamin-portraits-10-library-fireside.webp",
+    "width": 768,
+    "height": 1376,
+    "title": "Fireside Library",
+    "caption": "",
+    "alt": "Sanjay Benjamin in a grey velvet armchair in a wood-panelled library by the fire"
+  },
+  {
+    "id": "sanjay-benjamin-portraits-11-red-rose-lapel",
+    "source": "portraits/11-red-rose-lapel.jpg",
+    "category": "portraits",
+    "full": "images/gallery/full/sanjay-benjamin-portraits-11-red-rose-lapel.webp",
+    "thumb": "images/gallery/thumbs/sanjay-benjamin-portraits-11-red-rose-lapel.webp",
+    "width": 768,
+    "height": 1376,
+    "title": "The Red Rose",
+    "caption": "",
+    "alt": "Sanjay Benjamin in a grey double-breasted suit with a red rose lapel pin"
+  },
+  {
+    "id": "sanjay-benjamin-portraits-12-white-suit-monochrome",
+    "source": "portraits/12-white-suit-monochrome.jpg",
+    "category": "portraits",
+    "full": "images/gallery/full/sanjay-benjamin-portraits-12-white-suit-monochrome.webp",
+    "thumb": "images/gallery/thumbs/sanjay-benjamin-portraits-12-white-suit-monochrome.webp",
+    "width": 768,
+    "height": 1376,
+    "title": "White Suit",
+    "caption": "",
+    "alt": "Black and white portrait of Sanjay Benjamin seated in a white double-breasted suit"
+  },
+  {
     "id": "sanjay-benjamin-lifestyle-01-city-skyline-rooftop",
     "source": "lifestyle/01-city-skyline-rooftop.jpg",
     "category": "lifestyle",
@@ -246,6 +282,42 @@ window.GALLERY_PHOTOS = [
     "title": "Night Portrait",
     "caption": "",
     "alt": "Black and white night portrait of Sanjay Benjamin outside a grand illuminated building"
+  },
+  {
+    "id": "sanjay-benjamin-lifestyle-12-paris-cafe",
+    "source": "lifestyle/12-paris-cafe.jpg",
+    "category": "lifestyle",
+    "full": "images/gallery/full/sanjay-benjamin-lifestyle-12-paris-cafe.webp",
+    "thumb": "images/gallery/thumbs/sanjay-benjamin-lifestyle-12-paris-cafe.webp",
+    "width": 768,
+    "height": 1376,
+    "title": "Café Morning",
+    "caption": "",
+    "alt": "Sanjay Benjamin in a navy suit reading the newspaper at a Parisian café"
+  },
+  {
+    "id": "sanjay-benjamin-lifestyle-13-at-the-desk",
+    "source": "lifestyle/13-at-the-desk.jpg",
+    "category": "lifestyle",
+    "full": "images/gallery/full/sanjay-benjamin-lifestyle-13-at-the-desk.webp",
+    "thumb": "images/gallery/thumbs/sanjay-benjamin-lifestyle-13-at-the-desk.webp",
+    "width": 768,
+    "height": 1376,
+    "title": "At the Desk",
+    "caption": "",
+    "alt": "Sanjay Benjamin at his desk with a laptop in a dark wood office"
+  },
+  {
+    "id": "sanjay-benjamin-lifestyle-14-private-jet",
+    "source": "lifestyle/14-private-jet.jpg",
+    "category": "lifestyle",
+    "full": "images/gallery/full/sanjay-benjamin-lifestyle-14-private-jet.webp",
+    "thumb": "images/gallery/thumbs/sanjay-benjamin-lifestyle-14-private-jet.webp",
+    "width": 768,
+    "height": 1376,
+    "title": "In Flight",
+    "caption": "",
+    "alt": "Sanjay Benjamin smiling in a private jet cabin"
   },
   {
     "id": "sanjay-benjamin-creative-01-double-exposure-vision",
