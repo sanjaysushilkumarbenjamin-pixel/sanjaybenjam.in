@@ -309,6 +309,30 @@ window.GALLERY_PHOTOS = [
     "alt": "Smiling Sanjay Benjamin in a black t-shirt with arms crossed"
   },
   {
+    "id": "sanjay-benjamin-portraits-25-navy-blazer-arms-crossed",
+    "source": "portraits/25-navy-blazer-arms-crossed.png",
+    "category": "portraits",
+    "full": "images/gallery/full/sanjay-benjamin-portraits-25-navy-blazer-arms-crossed.webp",
+    "thumb": "images/gallery/thumbs/sanjay-benjamin-portraits-25-navy-blazer-arms-crossed.webp",
+    "width": 1122,
+    "height": 1402,
+    "title": "Navy Blazer",
+    "caption": "",
+    "alt": "Sanjay Benjamin in a navy blazer and white shirt with arms crossed in a bright office"
+  },
+  {
+    "id": "sanjay-benjamin-lifestyle-00-ai-or-be-owned-book",
+    "source": "lifestyle/00-ai-or-be-owned-book.png",
+    "category": "lifestyle",
+    "full": "images/gallery/full/sanjay-benjamin-lifestyle-00-ai-or-be-owned-book.webp",
+    "thumb": "images/gallery/thumbs/sanjay-benjamin-lifestyle-00-ai-or-be-owned-book.webp",
+    "width": 1122,
+    "height": 1402,
+    "title": "AI or Be Owned",
+    "caption": "Reading AI or Be Owned: A Handbook for Africa's AI Future.",
+    "alt": "Sanjay Benjamin reading his book AI or Be Owned: A Handbook for Africa's AI Future at a café"
+  },
+  {
     "id": "sanjay-benjamin-lifestyle-01-city-skyline-rooftop",
     "source": "lifestyle/01-city-skyline-rooftop.jpg",
     "category": "lifestyle",
@@ -319,6 +343,18 @@ window.GALLERY_PHOTOS = [
     "title": "City Skyline",
     "caption": "",
     "alt": "Sanjay Benjamin in a black suit on a rooftop with a city skyline at sunset"
+  },
+  {
+    "id": "sanjay-benjamin-lifestyle-01b-ideas-to-impact-desk",
+    "source": "lifestyle/01b-ideas-to-impact-desk.png",
+    "category": "lifestyle",
+    "full": "images/gallery/full/sanjay-benjamin-lifestyle-01b-ideas-to-impact-desk.webp",
+    "thumb": "images/gallery/thumbs/sanjay-benjamin-lifestyle-01b-ideas-to-impact-desk.webp",
+    "width": 1089,
+    "height": 1444,
+    "title": "Ideas to Impact",
+    "caption": "",
+    "alt": "Sanjay Benjamin in a navy suit at a desk with laptop, beneath signs reading People, Technology, A Stronger Africa"
   },
   {
     "id": "sanjay-benjamin-lifestyle-02-city-street-business-suit",
@@ -561,6 +597,30 @@ window.GALLERY_PHOTOS = [
     "alt": "Smiling Sanjay Benjamin holding a camera in a flowering garden"
   },
   {
+    "id": "sanjay-benjamin-lifestyle-22-cafe-golden-hour",
+    "source": "lifestyle/22-cafe-golden-hour.png",
+    "category": "lifestyle",
+    "full": "images/gallery/full/sanjay-benjamin-lifestyle-22-cafe-golden-hour.webp",
+    "thumb": "images/gallery/thumbs/sanjay-benjamin-lifestyle-22-cafe-golden-hour.webp",
+    "width": 1122,
+    "height": 1402,
+    "title": "Golden Hour Café",
+    "caption": "",
+    "alt": "Sanjay Benjamin in a black suit at an outdoor café table in golden evening light"
+  },
+  {
+    "id": "sanjay-benjamin-lifestyle-23-train-station",
+    "source": "lifestyle/23-train-station.png",
+    "category": "lifestyle",
+    "full": "images/gallery/full/sanjay-benjamin-lifestyle-23-train-station.webp",
+    "thumb": "images/gallery/thumbs/sanjay-benjamin-lifestyle-23-train-station.webp",
+    "width": 1024,
+    "height": 1536,
+    "title": "On the Platform",
+    "caption": "",
+    "alt": "Sanjay Benjamin standing still on a busy train platform as commuters rush past"
+  },
+  {
     "id": "sanjay-benjamin-creative-01-double-exposure-vision",
     "source": "creative/01-double-exposure-vision.jpg",
     "category": "creative",
@@ -739,5 +799,53 @@ window.GALLERY_PHOTOS = [
     "title": "Stand Out",
     "caption": "",
     "alt": "Sanjay Benjamin in an orange suit and hat standing out in a crowd of black hats"
+  },
+  {
+    "id": "sanjay-benjamin-creative-16-watercolour-signature",
+    "source": "creative/16-watercolour-signature.png",
+    "category": "creative",
+    "full": "images/gallery/full/sanjay-benjamin-creative-16-watercolour-signature.webp",
+    "thumb": "images/gallery/thumbs/sanjay-benjamin-creative-16-watercolour-signature.webp",
+    "width": 1086,
+    "height": 1448,
+    "title": "Watercolour Signature",
+    "caption": "",
+    "alt": "Watercolour ink portrait of Sanjay Benjamin signed Dr. Sanjay"
+  },
+  {
+    "id": "sanjay-benjamin-creative-17-orange-frames-monochrome",
+    "source": "creative/17-orange-frames-monochrome.jpg",
+    "category": "creative",
+    "full": "images/gallery/full/sanjay-benjamin-creative-17-orange-frames-monochrome.webp",
+    "thumb": "images/gallery/thumbs/sanjay-benjamin-creative-17-orange-frames-monochrome.webp",
+    "width": 768,
+    "height": 1376,
+    "title": "Orange Frames",
+    "caption": "",
+    "alt": "Black and white portrait of Sanjay Benjamin in a turtleneck with orange-tinted glasses"
+  },
+  {
+    "id": "sanjay-benjamin-creative-18-red-light-look-back",
+    "source": "creative/18-red-light-look-back.png",
+    "category": "creative",
+    "full": "images/gallery/full/sanjay-benjamin-creative-18-red-light-look-back.webp",
+    "thumb": "images/gallery/thumbs/sanjay-benjamin-creative-18-red-light-look-back.webp",
+    "width": 1086,
+    "height": 1448,
+    "title": "Red Light",
+    "caption": "",
+    "alt": "Sanjay Benjamin in sunglasses looking back over his shoulder in red stage light"
+  },
+  {
+    "id": "sanjay-benjamin-creative-19-neon-portrait",
+    "source": "creative/19-neon-portrait.png",
+    "category": "creative",
+    "full": "images/gallery/full/sanjay-benjamin-creative-19-neon-portrait.webp",
+    "thumb": "images/gallery/thumbs/sanjay-benjamin-creative-19-neon-portrait.webp",
+    "width": 1086,
+    "height": 1448,
+    "title": "Neon",
+    "caption": "",
+    "alt": "Close portrait of Sanjay Benjamin in sunglasses lit with red and blue light"
   }
 ];
