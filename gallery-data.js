@@ -321,6 +321,18 @@ window.GALLERY_PHOTOS = [
     "alt": "Sanjay Benjamin in a navy blazer and white shirt with arms crossed in a bright office"
   },
   {
+    "id": "sanjay-benjamin-portraits-26-monochrome-sweater",
+    "source": "portraits/26-monochrome-sweater.jpg",
+    "category": "portraits",
+    "full": "images/gallery/full/sanjay-benjamin-portraits-26-monochrome-sweater.webp",
+    "thumb": "images/gallery/thumbs/sanjay-benjamin-portraits-26-monochrome-sweater.webp",
+    "width": 768,
+    "height": 1376,
+    "title": "Black & White Sweater",
+    "caption": "",
+    "alt": "Black and white portrait of a smiling Sanjay Benjamin in a crew-neck sweater"
+  },
+  {
     "id": "sanjay-benjamin-lifestyle-00-ai-or-be-owned-book",
     "source": "lifestyle/00-ai-or-be-owned-book.png",
     "category": "lifestyle",
@@ -355,6 +367,18 @@ window.GALLERY_PHOTOS = [
     "title": "Ideas to Impact",
     "caption": "",
     "alt": "Sanjay Benjamin in a navy suit at a desk with laptop, beneath signs reading People, Technology, A Stronger Africa"
+  },
+  {
+    "id": "sanjay-benjamin-lifestyle-01c-strategy-chess",
+    "source": "lifestyle/01c-strategy-chess.jpg",
+    "category": "lifestyle",
+    "full": "images/gallery/full/sanjay-benjamin-lifestyle-01c-strategy-chess.webp",
+    "thumb": "images/gallery/thumbs/sanjay-benjamin-lifestyle-01c-strategy-chess.webp",
+    "width": 768,
+    "height": 1376,
+    "title": "Strategy",
+    "caption": "",
+    "alt": "Sanjay Benjamin moving a black queen on a gold and black chessboard"
   },
   {
     "id": "sanjay-benjamin-lifestyle-02-city-street-business-suit",
@@ -621,6 +645,18 @@ window.GALLERY_PHOTOS = [
     "alt": "Sanjay Benjamin standing still on a busy train platform as commuters rush past"
   },
   {
+    "id": "sanjay-benjamin-lifestyle-24-rainy-night-car",
+    "source": "lifestyle/24-rainy-night-car.jpg",
+    "category": "lifestyle",
+    "full": "images/gallery/full/sanjay-benjamin-lifestyle-24-rainy-night-car.webp",
+    "thumb": "images/gallery/thumbs/sanjay-benjamin-lifestyle-24-rainy-night-car.webp",
+    "width": 768,
+    "height": 1376,
+    "title": "Rainy Night",
+    "caption": "",
+    "alt": "Sanjay Benjamin looking out of a rain-covered car window on a city street at night"
+  },
+  {
     "id": "sanjay-benjamin-creative-01-double-exposure-vision",
     "source": "creative/01-double-exposure-vision.jpg",
     "category": "creative",
@@ -847,5 +883,41 @@ window.GALLERY_PHOTOS = [
     "title": "Neon",
     "caption": "",
     "alt": "Close portrait of Sanjay Benjamin in sunglasses lit with red and blue light"
+  },
+  {
+    "id": "sanjay-benjamin-creative-20-flat-cap-period",
+    "source": "creative/20-flat-cap-period.jpg",
+    "category": "creative",
+    "full": "images/gallery/full/sanjay-benjamin-creative-20-flat-cap-period.webp",
+    "thumb": "images/gallery/thumbs/sanjay-benjamin-creative-20-flat-cap-period.webp",
+    "width": 768,
+    "height": 1376,
+    "title": "Period Piece",
+    "caption": "",
+    "alt": "Sanjay Benjamin in a 1920s-style tweed three-piece suit and flat cap in a candlelit bar"
+  },
+  {
+    "id": "sanjay-benjamin-creative-21-pigeons-old-town",
+    "source": "creative/21-pigeons-old-town.jpg",
+    "category": "creative",
+    "full": "images/gallery/full/sanjay-benjamin-creative-21-pigeons-old-town.webp",
+    "thumb": "images/gallery/thumbs/sanjay-benjamin-creative-21-pigeons-old-town.webp",
+    "width": 768,
+    "height": 1376,
+    "title": "Old Town",
+    "caption": "",
+    "alt": "Sanjay Benjamin in a dark coat surrounded by pigeons taking flight in an old town square"
+  },
+  {
+    "id": "sanjay-benjamin-creative-22-rain-sunglasses",
+    "source": "creative/22-rain-sunglasses.jpg",
+    "category": "creative",
+    "full": "images/gallery/full/sanjay-benjamin-creative-22-rain-sunglasses.webp",
+    "thumb": "images/gallery/thumbs/sanjay-benjamin-creative-22-rain-sunglasses.webp",
+    "width": 768,
+    "height": 1376,
+    "title": "After the Rain",
+    "caption": "",
+    "alt": "Close portrait of Sanjay Benjamin in raindrop-covered sunglasses"
   }
 ];
