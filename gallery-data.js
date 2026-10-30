@@ -176,6 +176,78 @@ window.GALLERY_PHOTOS = [
     "alt": "Sanjay Benjamin seated on a stool in a grey suit and burgundy tie, hand on chin"
   },
   {
+    "id": "sanjay-benjamin-portraits-15-maroon-blazer-orange",
+    "source": "portraits/15-maroon-blazer-orange.jpg",
+    "category": "portraits",
+    "full": "images/gallery/full/sanjay-benjamin-portraits-15-maroon-blazer-orange.webp",
+    "thumb": "images/gallery/thumbs/sanjay-benjamin-portraits-15-maroon-blazer-orange.webp",
+    "width": 768,
+    "height": 1376,
+    "title": "Maroon & Orange",
+    "caption": "",
+    "alt": "Smiling Sanjay Benjamin in a maroon blazer against a bright orange backdrop"
+  },
+  {
+    "id": "sanjay-benjamin-portraits-16-pinstripe-clear-glasses",
+    "source": "portraits/16-pinstripe-clear-glasses.jpg",
+    "category": "portraits",
+    "full": "images/gallery/full/sanjay-benjamin-portraits-16-pinstripe-clear-glasses.webp",
+    "thumb": "images/gallery/thumbs/sanjay-benjamin-portraits-16-pinstripe-clear-glasses.webp",
+    "width": 768,
+    "height": 1376,
+    "title": "Pinstripe",
+    "caption": "",
+    "alt": "Sanjay Benjamin in a navy pinstripe suit and clear-frame glasses"
+  },
+  {
+    "id": "sanjay-benjamin-portraits-17-cream-double-breasted",
+    "source": "portraits/17-cream-double-breasted.jpg",
+    "category": "portraits",
+    "full": "images/gallery/full/sanjay-benjamin-portraits-17-cream-double-breasted.webp",
+    "thumb": "images/gallery/thumbs/sanjay-benjamin-portraits-17-cream-double-breasted.webp",
+    "width": 768,
+    "height": 1376,
+    "title": "Ivory Double-Breasted",
+    "caption": "",
+    "alt": "Sanjay Benjamin in an ivory double-breasted suit adjusting his sunglasses"
+  },
+  {
+    "id": "sanjay-benjamin-portraits-18-profile-dark",
+    "source": "portraits/18-profile-dark.jpg",
+    "category": "portraits",
+    "full": "images/gallery/full/sanjay-benjamin-portraits-18-profile-dark.webp",
+    "thumb": "images/gallery/thumbs/sanjay-benjamin-portraits-18-profile-dark.webp",
+    "width": 768,
+    "height": 1376,
+    "title": "Profile",
+    "caption": "",
+    "alt": "Side profile of Sanjay Benjamin adjusting his tie against a black background"
+  },
+  {
+    "id": "sanjay-benjamin-portraits-19-arms-crossed-black",
+    "source": "portraits/19-arms-crossed-black.jpg",
+    "category": "portraits",
+    "full": "images/gallery/full/sanjay-benjamin-portraits-19-arms-crossed-black.webp",
+    "thumb": "images/gallery/thumbs/sanjay-benjamin-portraits-19-arms-crossed-black.webp",
+    "width": 768,
+    "height": 1376,
+    "title": "Arms Crossed",
+    "caption": "",
+    "alt": "Sanjay Benjamin in an all-black suit with arms crossed, studio portrait"
+  },
+  {
+    "id": "sanjay-benjamin-portraits-20-black-three-piece",
+    "source": "portraits/20-black-three-piece.jpg",
+    "category": "portraits",
+    "full": "images/gallery/full/sanjay-benjamin-portraits-20-black-three-piece.webp",
+    "thumb": "images/gallery/thumbs/sanjay-benjamin-portraits-20-black-three-piece.webp",
+    "width": 768,
+    "height": 1376,
+    "title": "Three-Piece",
+    "caption": "",
+    "alt": "Sanjay Benjamin in a black three-piece suit, hands in pockets, looking away"
+  },
+  {
     "id": "sanjay-benjamin-lifestyle-01-city-skyline-rooftop",
     "source": "lifestyle/01-city-skyline-rooftop.jpg",
     "category": "lifestyle",
@@ -392,6 +464,42 @@ window.GALLERY_PHOTOS = [
     "alt": "Smiling Sanjay Benjamin in a black shirt on a terrace overlooking city lights at night"
   },
   {
+    "id": "sanjay-benjamin-lifestyle-19-restaurant-monochrome",
+    "source": "lifestyle/19-restaurant-monochrome.jpg",
+    "category": "lifestyle",
+    "full": "images/gallery/full/sanjay-benjamin-lifestyle-19-restaurant-monochrome.webp",
+    "thumb": "images/gallery/thumbs/sanjay-benjamin-lifestyle-19-restaurant-monochrome.webp",
+    "width": 768,
+    "height": 1376,
+    "title": "Lunch Hour",
+    "caption": "",
+    "alt": "Black and white portrait of Sanjay Benjamin in sunglasses in an elegant restaurant"
+  },
+  {
+    "id": "sanjay-benjamin-lifestyle-20-pinstripe-lounge",
+    "source": "lifestyle/20-pinstripe-lounge.jpg",
+    "category": "lifestyle",
+    "full": "images/gallery/full/sanjay-benjamin-lifestyle-20-pinstripe-lounge.webp",
+    "thumb": "images/gallery/thumbs/sanjay-benjamin-lifestyle-20-pinstripe-lounge.webp",
+    "width": 768,
+    "height": 1376,
+    "title": "The Lounge",
+    "caption": "",
+    "alt": "Sanjay Benjamin in a navy pinstripe suit adjusting his collar in a warmly lit lounge"
+  },
+  {
+    "id": "sanjay-benjamin-lifestyle-21-garden-with-camera",
+    "source": "lifestyle/21-garden-with-camera.jpg",
+    "category": "lifestyle",
+    "full": "images/gallery/full/sanjay-benjamin-lifestyle-21-garden-with-camera.webp",
+    "thumb": "images/gallery/thumbs/sanjay-benjamin-lifestyle-21-garden-with-camera.webp",
+    "width": 768,
+    "height": 1376,
+    "title": "Behind the Lens",
+    "caption": "",
+    "alt": "Smiling Sanjay Benjamin holding a camera in a flowering garden"
+  },
+  {
     "id": "sanjay-benjamin-creative-01-double-exposure-vision",
     "source": "creative/01-double-exposure-vision.jpg",
     "category": "creative",
@@ -486,5 +594,29 @@ window.GALLERY_PHOTOS = [
     "title": "Mini Me",
     "caption": "",
     "alt": "Playful street photo of Sanjay Benjamin chasing a cartoon mini version of himself"
+  },
+  {
+    "id": "sanjay-benjamin-creative-09-engraving-portrait",
+    "source": "creative/09-engraving-portrait.jpg",
+    "category": "creative",
+    "full": "images/gallery/full/sanjay-benjamin-creative-09-engraving-portrait.webp",
+    "thumb": "images/gallery/thumbs/sanjay-benjamin-creative-09-engraving-portrait.webp",
+    "width": 768,
+    "height": 1376,
+    "title": "Engraving",
+    "caption": "",
+    "alt": "Engraved-style illustration of Sanjay Benjamin in a turtleneck and coat"
+  },
+  {
+    "id": "sanjay-benjamin-creative-10-red-splash-illustration",
+    "source": "creative/10-red-splash-illustration.jpg",
+    "category": "creative",
+    "full": "images/gallery/full/sanjay-benjamin-creative-10-red-splash-illustration.webp",
+    "thumb": "images/gallery/thumbs/sanjay-benjamin-creative-10-red-splash-illustration.webp",
+    "width": 768,
+    "height": 1376,
+    "title": "Red Splash",
+    "caption": "",
+    "alt": "Comic-style illustration of Sanjay Benjamin against a red paint splash"
   }
 ];
